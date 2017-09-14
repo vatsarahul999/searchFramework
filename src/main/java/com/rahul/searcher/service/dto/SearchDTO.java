@@ -34,4 +34,14 @@ public class SearchDTO {
 		this.functionNames = functionNames;
 	}
 
+	@Override
+	public String toString() {
+		StringBuffer res = new StringBuffer();
+		res.append("{fileName=" + fileName + ", path=" + path +"[");
+		for(String fuString: functionNames)
+			res.append(fuString).append(",");
+		res.append("]}");
+		return res.toString();
+	}
+
 }

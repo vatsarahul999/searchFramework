@@ -1,6 +1,6 @@
-// Generated from C.g4 by ANTLR 4.4
+// Generated from C.g4 by ANTLR 4.7
 
-package com.rahul.searcher.service.parser;
+package com.rahul.searcher.service.parser;	
 
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -13,14 +13,14 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class CParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.4", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__13=1, T__12=2, T__11=3, T__10=4, T__9=5, T__8=6, T__7=7, T__6=8, T__5=9, 
-		T__4=10, T__3=11, T__2=12, T__1=13, T__0=14, Auto=15, Break=16, Case=17, 
+		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
+		T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, Auto=15, Break=16, Case=17, 
 		Char=18, Const=19, Continue=20, Default=21, Do=22, Double=23, Else=24, 
 		Enum=25, Extern=26, Float=27, For=28, Goto=29, If=30, Inline=31, Int=32, 
 		Long=33, Register=34, Restrict=35, Return=36, Short=37, Signed=38, Sizeof=39, 
@@ -38,26 +38,6 @@ public class CParser extends Parser {
 		StringLiteral=108, ComplexDefine=109, AsmBlock=110, LineAfterPreprocessing=111, 
 		LineDirective=112, PragmaDirective=113, Whitespace=114, Newline=115, BlockComment=116, 
 		LineComment=117;
-	public static final String[] tokenNames = {
-		"<INVALID>", "'__extension__'", "'__volatile__'", "'__stdcall'", "'__asm__'", 
-		"'__declspec'", "'__builtin_va_arg'", "'__typeof__'", "'__asm'", "'__m128d'", 
-		"'__m128i'", "'__attribute__'", "'__inline__'", "'__m128'", "'__builtin_offsetof'", 
-		"'auto'", "'break'", "'case'", "'char'", "'const'", "'continue'", "'default'", 
-		"'do'", "'double'", "'else'", "'enum'", "'extern'", "'float'", "'for'", 
-		"'goto'", "'if'", "'inline'", "'int'", "'long'", "'register'", "'restrict'", 
-		"'return'", "'short'", "'signed'", "'sizeof'", "'static'", "'struct'", 
-		"'switch'", "'typedef'", "'union'", "'unsigned'", "'void'", "'volatile'", 
-		"'while'", "'_Alignas'", "'_Alignof'", "'_Atomic'", "'_Bool'", "'_Complex'", 
-		"'_Generic'", "'_Imaginary'", "'_Noreturn'", "'_Static_assert'", "'_Thread_local'", 
-		"'('", "')'", "'['", "']'", "'{'", "'}'", "'<'", "'<='", "'>'", "'>='", 
-		"'<<'", "'>>'", "'+'", "'++'", "'-'", "'--'", "'*'", "'/'", "'%'", "'&'", 
-		"'|'", "'&&'", "'||'", "'^'", "'!'", "'~'", "'?'", "':'", "';'", "','", 
-		"'='", "'*='", "'/='", "'%='", "'+='", "'-='", "'<<='", "'>>='", "'&='", 
-		"'^='", "'|='", "'=='", "'!='", "'->'", "'.'", "'...'", "Identifier", 
-		"Constant", "DigitSequence", "StringLiteral", "ComplexDefine", "AsmBlock", 
-		"LineAfterPreprocessing", "LineDirective", "PragmaDirective", "Whitespace", 
-		"Newline", "BlockComment", "LineComment"
-	};
 	public static final int
 		RULE_primaryExpression = 0, RULE_genericSelection = 1, RULE_genericAssocList = 2, 
 		RULE_genericAssociation = 3, RULE_postfixExpression = 4, RULE_argumentExpressionList = 5, 
@@ -114,11 +94,77 @@ public class CParser extends Parser {
 		"functionDefinition", "declarationList"
 	};
 
-	@Override
-	public String getGrammarFileName() { return "C.g4"; }
+	private static final String[] _LITERAL_NAMES = {
+		null, "'__extension__'", "'__builtin_va_arg'", "'__builtin_offsetof'", 
+		"'__m128'", "'__m128d'", "'__m128i'", "'__typeof__'", "'__inline__'", 
+		"'__stdcall'", "'__declspec'", "'__asm'", "'__attribute__'", "'__asm__'", 
+		"'__volatile__'", "'auto'", "'break'", "'case'", "'char'", "'const'", 
+		"'continue'", "'default'", "'do'", "'double'", "'else'", "'enum'", "'extern'", 
+		"'float'", "'for'", "'goto'", "'if'", "'inline'", "'int'", "'long'", "'register'", 
+		"'restrict'", "'return'", "'short'", "'signed'", "'sizeof'", "'static'", 
+		"'struct'", "'switch'", "'typedef'", "'union'", "'unsigned'", "'void'", 
+		"'volatile'", "'while'", "'_Alignas'", "'_Alignof'", "'_Atomic'", "'_Bool'", 
+		"'_Complex'", "'_Generic'", "'_Imaginary'", "'_Noreturn'", "'_Static_assert'", 
+		"'_Thread_local'", "'('", "')'", "'['", "']'", "'{'", "'}'", "'<'", "'<='", 
+		"'>'", "'>='", "'<<'", "'>>'", "'+'", "'++'", "'-'", "'--'", "'*'", "'/'", 
+		"'%'", "'&'", "'|'", "'&&'", "'||'", "'^'", "'!'", "'~'", "'?'", "':'", 
+		"';'", "','", "'='", "'*='", "'/='", "'%='", "'+='", "'-='", "'<<='", 
+		"'>>='", "'&='", "'^='", "'|='", "'=='", "'!='", "'->'", "'.'", "'...'"
+	};
+	private static final String[] _SYMBOLIC_NAMES = {
+		null, null, null, null, null, null, null, null, null, null, null, null, 
+		null, null, null, "Auto", "Break", "Case", "Char", "Const", "Continue", 
+		"Default", "Do", "Double", "Else", "Enum", "Extern", "Float", "For", "Goto", 
+		"If", "Inline", "Int", "Long", "Register", "Restrict", "Return", "Short", 
+		"Signed", "Sizeof", "Static", "Struct", "Switch", "Typedef", "Union", 
+		"Unsigned", "Void", "Volatile", "While", "Alignas", "Alignof", "Atomic", 
+		"Bool", "Complex", "Generic", "Imaginary", "Noreturn", "StaticAssert", 
+		"ThreadLocal", "LeftParen", "RightParen", "LeftBracket", "RightBracket", 
+		"LeftBrace", "RightBrace", "Less", "LessEqual", "Greater", "GreaterEqual", 
+		"LeftShift", "RightShift", "Plus", "PlusPlus", "Minus", "MinusMinus", 
+		"Star", "Div", "Mod", "And", "Or", "AndAnd", "OrOr", "Caret", "Not", "Tilde", 
+		"Question", "Colon", "Semi", "Comma", "Assign", "StarAssign", "DivAssign", 
+		"ModAssign", "PlusAssign", "MinusAssign", "LeftShiftAssign", "RightShiftAssign", 
+		"AndAssign", "XorAssign", "OrAssign", "Equal", "NotEqual", "Arrow", "Dot", 
+		"Ellipsis", "Identifier", "Constant", "DigitSequence", "StringLiteral", 
+		"ComplexDefine", "AsmBlock", "LineAfterPreprocessing", "LineDirective", 
+		"PragmaDirective", "Whitespace", "Newline", "BlockComment", "LineComment"
+	};
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+
+	/**
+	 * @deprecated Use {@link #VOCABULARY} instead.
+	 */
+	@Deprecated
+	public static final String[] tokenNames;
+	static {
+		tokenNames = new String[_SYMBOLIC_NAMES.length];
+		for (int i = 0; i < tokenNames.length; i++) {
+			tokenNames[i] = VOCABULARY.getLiteralName(i);
+			if (tokenNames[i] == null) {
+				tokenNames[i] = VOCABULARY.getSymbolicName(i);
+			}
+
+			if (tokenNames[i] == null) {
+				tokenNames[i] = "<INVALID>";
+			}
+		}
+	}
 
 	@Override
-	public String[] getTokenNames() { return tokenNames; }
+	@Deprecated
+	public String[] getTokenNames() {
+		return tokenNames;
+	}
+
+	@Override
+
+	public Vocabulary getVocabulary() {
+		return VOCABULARY;
+	}
+
+	@Override
+	public String getGrammarFileName() { return "C.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -135,25 +181,25 @@ public class CParser extends Parser {
 	}
 	public static class PrimaryExpressionContext extends ParserRuleContext {
 		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
-		public UnaryExpressionContext unaryExpression() {
-			return getRuleContext(UnaryExpressionContext.class,0);
-		}
-		public TypeNameContext typeName() {
-			return getRuleContext(TypeNameContext.class,0);
-		}
-		public List<TerminalNode> StringLiteral() { return getTokens(CParser.StringLiteral); }
 		public TerminalNode Constant() { return getToken(CParser.Constant, 0); }
+		public List<TerminalNode> StringLiteral() { return getTokens(CParser.StringLiteral); }
 		public TerminalNode StringLiteral(int i) {
 			return getToken(CParser.StringLiteral, i);
 		}
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
+		public GenericSelectionContext genericSelection() {
+			return getRuleContext(GenericSelectionContext.class,0);
+		}
 		public CompoundStatementContext compoundStatement() {
 			return getRuleContext(CompoundStatementContext.class,0);
 		}
-		public GenericSelectionContext genericSelection() {
-			return getRuleContext(GenericSelectionContext.class,0);
+		public UnaryExpressionContext unaryExpression() {
+			return getRuleContext(UnaryExpressionContext.class,0);
+		}
+		public TypeNameContext typeName() {
+			return getRuleContext(TypeNameContext.class,0);
 		}
 		public PrimaryExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -176,17 +222,20 @@ public class CParser extends Parser {
 		try {
 			int _alt;
 			setState(207);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,2,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(174); match(Identifier);
+				setState(174);
+				match(Identifier);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(175); match(Constant);
+				setState(175);
+				match(Constant);
 				}
 				break;
 			case 3:
@@ -200,7 +249,8 @@ public class CParser extends Parser {
 					case 1:
 						{
 						{
-						setState(176); match(StringLiteral);
+						setState(176);
+						match(StringLiteral);
 						}
 						}
 						break;
@@ -216,53 +266,74 @@ public class CParser extends Parser {
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(181); match(LeftParen);
-				setState(182); expression(0);
-				setState(183); match(RightParen);
+				setState(181);
+				match(LeftParen);
+				setState(182);
+				expression(0);
+				setState(183);
+				match(RightParen);
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(185); genericSelection();
+				setState(185);
+				genericSelection();
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
 				setState(187);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if (_la==T__13) {
+				if (_la==T__0) {
 					{
-					setState(186); match(T__13);
+					setState(186);
+					match(T__0);
 					}
 				}
 
-				setState(189); match(LeftParen);
-				setState(190); compoundStatement();
-				setState(191); match(RightParen);
+				setState(189);
+				match(LeftParen);
+				setState(190);
+				compoundStatement();
+				setState(191);
+				match(RightParen);
 				}
 				break;
 			case 7:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(193); match(T__8);
-				setState(194); match(LeftParen);
-				setState(195); unaryExpression();
-				setState(196); match(Comma);
-				setState(197); typeName();
-				setState(198); match(RightParen);
+				setState(193);
+				match(T__1);
+				setState(194);
+				match(LeftParen);
+				setState(195);
+				unaryExpression();
+				setState(196);
+				match(Comma);
+				setState(197);
+				typeName();
+				setState(198);
+				match(RightParen);
 				}
 				break;
 			case 8:
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(200); match(T__0);
-				setState(201); match(LeftParen);
-				setState(202); typeName();
-				setState(203); match(Comma);
-				setState(204); unaryExpression();
-				setState(205); match(RightParen);
+				setState(200);
+				match(T__2);
+				setState(201);
+				match(LeftParen);
+				setState(202);
+				typeName();
+				setState(203);
+				match(Comma);
+				setState(204);
+				unaryExpression();
+				setState(205);
+				match(RightParen);
 				}
 				break;
 			}
@@ -279,11 +350,11 @@ public class CParser extends Parser {
 	}
 
 	public static class GenericSelectionContext extends ParserRuleContext {
-		public GenericAssocListContext genericAssocList() {
-			return getRuleContext(GenericAssocListContext.class,0);
-		}
 		public AssignmentExpressionContext assignmentExpression() {
 			return getRuleContext(AssignmentExpressionContext.class,0);
+		}
+		public GenericAssocListContext genericAssocList() {
+			return getRuleContext(GenericAssocListContext.class,0);
 		}
 		public GenericSelectionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -305,12 +376,18 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(209); match(Generic);
-			setState(210); match(LeftParen);
-			setState(211); assignmentExpression();
-			setState(212); match(Comma);
-			setState(213); genericAssocList(0);
-			setState(214); match(RightParen);
+			setState(209);
+			match(Generic);
+			setState(210);
+			match(LeftParen);
+			setState(211);
+			assignmentExpression();
+			setState(212);
+			match(Comma);
+			setState(213);
+			genericAssocList(0);
+			setState(214);
+			match(RightParen);
 			}
 		}
 		catch (RecognitionException re) {
@@ -361,7 +438,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(217); genericAssociation();
+			setState(217);
+			genericAssociation();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(224);
@@ -377,8 +455,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_genericAssocList);
 					setState(219);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(220); match(Comma);
-					setState(221); genericAssociation();
+					setState(220);
+					match(Comma);
+					setState(221);
+					genericAssociation();
 					}
 					} 
 				}
@@ -425,12 +505,13 @@ public class CParser extends Parser {
 		enterRule(_localctx, 6, RULE_genericAssociation);
 		try {
 			setState(234);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case T__13:
-			case T__7:
-			case T__5:
+			case T__0:
+			case T__3:
 			case T__4:
-			case T__1:
+			case T__5:
+			case T__6:
 			case Char:
 			case Const:
 			case Double:
@@ -452,17 +533,23 @@ public class CParser extends Parser {
 			case Identifier:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(227); typeName();
-				setState(228); match(Colon);
-				setState(229); assignmentExpression();
+				setState(227);
+				typeName();
+				setState(228);
+				match(Colon);
+				setState(229);
+				assignmentExpression();
 				}
 				break;
 			case Default:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(231); match(Default);
-				setState(232); match(Colon);
-				setState(233); assignmentExpression();
+				setState(231);
+				match(Default);
+				setState(232);
+				match(Colon);
+				setState(233);
+				assignmentExpression();
 				}
 				break;
 			default:
@@ -481,18 +568,17 @@ public class CParser extends Parser {
 	}
 
 	public static class PostfixExpressionContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
-		public PostfixExpressionContext postfixExpression() {
-			return getRuleContext(PostfixExpressionContext.class,0);
+		public PrimaryExpressionContext primaryExpression() {
+			return getRuleContext(PrimaryExpressionContext.class,0);
 		}
 		public TypeNameContext typeName() {
 			return getRuleContext(TypeNameContext.class,0);
 		}
-		public PrimaryExpressionContext primaryExpression() {
-			return getRuleContext(PrimaryExpressionContext.class,0);
-		}
 		public InitializerListContext initializerList() {
 			return getRuleContext(InitializerListContext.class,0);
+		}
+		public PostfixExpressionContext postfixExpression() {
+			return getRuleContext(PostfixExpressionContext.class,0);
 		}
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
@@ -500,6 +586,7 @@ public class CParser extends Parser {
 		public ArgumentExpressionListContext argumentExpressionList() {
 			return getRuleContext(ArgumentExpressionListContext.class,0);
 		}
+		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
 		public PostfixExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -531,54 +618,84 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(270);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,5,_ctx) ) {
 			case 1:
 				{
-				setState(237); primaryExpression();
+				setState(237);
+				primaryExpression();
 				}
 				break;
 			case 2:
 				{
-				setState(238); match(LeftParen);
-				setState(239); typeName();
-				setState(240); match(RightParen);
-				setState(241); match(LeftBrace);
-				setState(242); initializerList(0);
-				setState(243); match(RightBrace);
+				setState(238);
+				match(LeftParen);
+				setState(239);
+				typeName();
+				setState(240);
+				match(RightParen);
+				setState(241);
+				match(LeftBrace);
+				setState(242);
+				initializerList(0);
+				setState(243);
+				match(RightBrace);
 				}
 				break;
 			case 3:
 				{
-				setState(245); match(LeftParen);
-				setState(246); typeName();
-				setState(247); match(RightParen);
-				setState(248); match(LeftBrace);
-				setState(249); initializerList(0);
-				setState(250); match(Comma);
-				setState(251); match(RightBrace);
+				setState(245);
+				match(LeftParen);
+				setState(246);
+				typeName();
+				setState(247);
+				match(RightParen);
+				setState(248);
+				match(LeftBrace);
+				setState(249);
+				initializerList(0);
+				setState(250);
+				match(Comma);
+				setState(251);
+				match(RightBrace);
 				}
 				break;
 			case 4:
 				{
-				setState(253); match(T__13);
-				setState(254); match(LeftParen);
-				setState(255); typeName();
-				setState(256); match(RightParen);
-				setState(257); match(LeftBrace);
-				setState(258); initializerList(0);
-				setState(259); match(RightBrace);
+				setState(253);
+				match(T__0);
+				setState(254);
+				match(LeftParen);
+				setState(255);
+				typeName();
+				setState(256);
+				match(RightParen);
+				setState(257);
+				match(LeftBrace);
+				setState(258);
+				initializerList(0);
+				setState(259);
+				match(RightBrace);
 				}
 				break;
 			case 5:
 				{
-				setState(261); match(T__13);
-				setState(262); match(LeftParen);
-				setState(263); typeName();
-				setState(264); match(RightParen);
-				setState(265); match(LeftBrace);
-				setState(266); initializerList(0);
-				setState(267); match(Comma);
-				setState(268); match(RightBrace);
+				setState(261);
+				match(T__0);
+				setState(262);
+				match(LeftParen);
+				setState(263);
+				typeName();
+				setState(264);
+				match(RightParen);
+				setState(265);
+				match(LeftBrace);
+				setState(266);
+				initializerList(0);
+				setState(267);
+				match(Comma);
+				setState(268);
+				match(RightBrace);
 				}
 				break;
 			}
@@ -592,6 +709,7 @@ public class CParser extends Parser {
 					_prevctx = _localctx;
 					{
 					setState(293);
+					_errHandler.sync(this);
 					switch ( getInterpreter().adaptivePredict(_input,7,_ctx) ) {
 					case 1:
 						{
@@ -599,9 +717,12 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_postfixExpression);
 						setState(272);
 						if (!(precpred(_ctx, 10))) throw new FailedPredicateException(this, "precpred(_ctx, 10)");
-						setState(273); match(LeftBracket);
-						setState(274); expression(0);
-						setState(275); match(RightBracket);
+						setState(273);
+						match(LeftBracket);
+						setState(274);
+						expression(0);
+						setState(275);
+						match(RightBracket);
 						}
 						break;
 					case 2:
@@ -610,16 +731,20 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_postfixExpression);
 						setState(277);
 						if (!(precpred(_ctx, 9))) throw new FailedPredicateException(this, "precpred(_ctx, 9)");
-						setState(278); match(LeftParen);
+						setState(278);
+						match(LeftParen);
 						setState(280);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
-						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 							{
-							setState(279); argumentExpressionList(0);
+							setState(279);
+							argumentExpressionList(0);
 							}
 						}
 
-						setState(282); match(RightParen);
+						setState(282);
+						match(RightParen);
 						}
 						break;
 					case 3:
@@ -628,8 +753,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_postfixExpression);
 						setState(283);
 						if (!(precpred(_ctx, 8))) throw new FailedPredicateException(this, "precpred(_ctx, 8)");
-						setState(284); match(Dot);
-						setState(285); match(Identifier);
+						setState(284);
+						match(Dot);
+						setState(285);
+						match(Identifier);
 						}
 						break;
 					case 4:
@@ -638,8 +765,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_postfixExpression);
 						setState(286);
 						if (!(precpred(_ctx, 7))) throw new FailedPredicateException(this, "precpred(_ctx, 7)");
-						setState(287); match(Arrow);
-						setState(288); match(Identifier);
+						setState(287);
+						match(Arrow);
+						setState(288);
+						match(Identifier);
 						}
 						break;
 					case 5:
@@ -648,7 +777,8 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_postfixExpression);
 						setState(289);
 						if (!(precpred(_ctx, 6))) throw new FailedPredicateException(this, "precpred(_ctx, 6)");
-						setState(290); match(PlusPlus);
+						setState(290);
+						match(PlusPlus);
 						}
 						break;
 					case 6:
@@ -657,7 +787,8 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_postfixExpression);
 						setState(291);
 						if (!(precpred(_ctx, 5))) throw new FailedPredicateException(this, "precpred(_ctx, 5)");
-						setState(292); match(MinusMinus);
+						setState(292);
+						match(MinusMinus);
 						}
 						break;
 					}
@@ -717,7 +848,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(299); assignmentExpression();
+			setState(299);
+			assignmentExpression();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(306);
@@ -733,8 +865,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_argumentExpressionList);
 					setState(301);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(302); match(Comma);
-					setState(303); assignmentExpression();
+					setState(302);
+					match(Comma);
+					setState(303);
+					assignmentExpression();
 					}
 					} 
 				}
@@ -756,12 +890,14 @@ public class CParser extends Parser {
 	}
 
 	public static class UnaryExpressionContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
 		public PostfixExpressionContext postfixExpression() {
 			return getRuleContext(PostfixExpressionContext.class,0);
 		}
 		public UnaryExpressionContext unaryExpression() {
 			return getRuleContext(UnaryExpressionContext.class,0);
+		}
+		public UnaryOperatorContext unaryOperator() {
+			return getRuleContext(UnaryOperatorContext.class,0);
 		}
 		public CastExpressionContext castExpression() {
 			return getRuleContext(CastExpressionContext.class,0);
@@ -769,9 +905,7 @@ public class CParser extends Parser {
 		public TypeNameContext typeName() {
 			return getRuleContext(TypeNameContext.class,0);
 		}
-		public UnaryOperatorContext unaryOperator() {
-			return getRuleContext(UnaryOperatorContext.class,0);
-		}
+		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
 		public UnaryExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -791,64 +925,84 @@ public class CParser extends Parser {
 		enterRule(_localctx, 12, RULE_unaryExpression);
 		try {
 			setState(331);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,10,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(309); postfixExpression(0);
+				setState(309);
+				postfixExpression(0);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(310); match(PlusPlus);
-				setState(311); unaryExpression();
+				setState(310);
+				match(PlusPlus);
+				setState(311);
+				unaryExpression();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(312); match(MinusMinus);
-				setState(313); unaryExpression();
+				setState(312);
+				match(MinusMinus);
+				setState(313);
+				unaryExpression();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(314); unaryOperator();
-				setState(315); castExpression();
+				setState(314);
+				unaryOperator();
+				setState(315);
+				castExpression();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(317); match(Sizeof);
-				setState(318); unaryExpression();
+				setState(317);
+				match(Sizeof);
+				setState(318);
+				unaryExpression();
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(319); match(Sizeof);
-				setState(320); match(LeftParen);
-				setState(321); typeName();
-				setState(322); match(RightParen);
+				setState(319);
+				match(Sizeof);
+				setState(320);
+				match(LeftParen);
+				setState(321);
+				typeName();
+				setState(322);
+				match(RightParen);
 				}
 				break;
 			case 7:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(324); match(Alignof);
-				setState(325); match(LeftParen);
-				setState(326); typeName();
-				setState(327); match(RightParen);
+				setState(324);
+				match(Alignof);
+				setState(325);
+				match(LeftParen);
+				setState(326);
+				typeName();
+				setState(327);
+				match(RightParen);
 				}
 				break;
 			case 8:
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(329); match(AndAnd);
-				setState(330); match(Identifier);
+				setState(329);
+				match(AndAnd);
+				setState(330);
+				match(Identifier);
 				}
 				break;
 			}
@@ -891,7 +1045,11 @@ public class CParser extends Parser {
 			if ( !(((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (Minus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
-			consume();
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -909,11 +1067,11 @@ public class CParser extends Parser {
 		public UnaryExpressionContext unaryExpression() {
 			return getRuleContext(UnaryExpressionContext.class,0);
 		}
-		public CastExpressionContext castExpression() {
-			return getRuleContext(CastExpressionContext.class,0);
-		}
 		public TypeNameContext typeName() {
 			return getRuleContext(TypeNameContext.class,0);
+		}
+		public CastExpressionContext castExpression() {
+			return getRuleContext(CastExpressionContext.class,0);
 		}
 		public TerminalNode DigitSequence() { return getToken(CParser.DigitSequence, 0); }
 		public CastExpressionContext(ParserRuleContext parent, int invokingState) {
@@ -935,36 +1093,48 @@ public class CParser extends Parser {
 		enterRule(_localctx, 16, RULE_castExpression);
 		try {
 			setState(348);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,11,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(335); unaryExpression();
+				setState(335);
+				unaryExpression();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(336); match(LeftParen);
-				setState(337); typeName();
-				setState(338); match(RightParen);
-				setState(339); castExpression();
+				setState(336);
+				match(LeftParen);
+				setState(337);
+				typeName();
+				setState(338);
+				match(RightParen);
+				setState(339);
+				castExpression();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(341); match(T__13);
-				setState(342); match(LeftParen);
-				setState(343); typeName();
-				setState(344); match(RightParen);
-				setState(345); castExpression();
+				setState(341);
+				match(T__0);
+				setState(342);
+				match(LeftParen);
+				setState(343);
+				typeName();
+				setState(344);
+				match(RightParen);
+				setState(345);
+				castExpression();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(347); match(DigitSequence);
+				setState(347);
+				match(DigitSequence);
 				}
 				break;
 			}
@@ -1017,7 +1187,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(351); castExpression();
+			setState(351);
+			castExpression();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(364);
@@ -1029,6 +1200,7 @@ public class CParser extends Parser {
 					_prevctx = _localctx;
 					{
 					setState(362);
+					_errHandler.sync(this);
 					switch ( getInterpreter().adaptivePredict(_input,12,_ctx) ) {
 					case 1:
 						{
@@ -1036,8 +1208,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_multiplicativeExpression);
 						setState(353);
 						if (!(precpred(_ctx, 3))) throw new FailedPredicateException(this, "precpred(_ctx, 3)");
-						setState(354); match(Star);
-						setState(355); castExpression();
+						setState(354);
+						match(Star);
+						setState(355);
+						castExpression();
 						}
 						break;
 					case 2:
@@ -1046,8 +1220,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_multiplicativeExpression);
 						setState(356);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
-						setState(357); match(Div);
-						setState(358); castExpression();
+						setState(357);
+						match(Div);
+						setState(358);
+						castExpression();
 						}
 						break;
 					case 3:
@@ -1056,8 +1232,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_multiplicativeExpression);
 						setState(359);
 						if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-						setState(360); match(Mod);
-						setState(361); castExpression();
+						setState(360);
+						match(Mod);
+						setState(361);
+						castExpression();
 						}
 						break;
 					}
@@ -1117,7 +1295,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(368); multiplicativeExpression(0);
+			setState(368);
+			multiplicativeExpression(0);
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(378);
@@ -1129,6 +1308,7 @@ public class CParser extends Parser {
 					_prevctx = _localctx;
 					{
 					setState(376);
+					_errHandler.sync(this);
 					switch ( getInterpreter().adaptivePredict(_input,14,_ctx) ) {
 					case 1:
 						{
@@ -1136,8 +1316,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_additiveExpression);
 						setState(370);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
-						setState(371); match(Plus);
-						setState(372); multiplicativeExpression(0);
+						setState(371);
+						match(Plus);
+						setState(372);
+						multiplicativeExpression(0);
 						}
 						break;
 					case 2:
@@ -1146,8 +1328,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_additiveExpression);
 						setState(373);
 						if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-						setState(374); match(Minus);
-						setState(375); multiplicativeExpression(0);
+						setState(374);
+						match(Minus);
+						setState(375);
+						multiplicativeExpression(0);
 						}
 						break;
 					}
@@ -1207,7 +1391,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(382); additiveExpression(0);
+			setState(382);
+			additiveExpression(0);
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(392);
@@ -1219,6 +1404,7 @@ public class CParser extends Parser {
 					_prevctx = _localctx;
 					{
 					setState(390);
+					_errHandler.sync(this);
 					switch ( getInterpreter().adaptivePredict(_input,16,_ctx) ) {
 					case 1:
 						{
@@ -1226,8 +1412,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_shiftExpression);
 						setState(384);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
-						setState(385); match(LeftShift);
-						setState(386); additiveExpression(0);
+						setState(385);
+						match(LeftShift);
+						setState(386);
+						additiveExpression(0);
 						}
 						break;
 					case 2:
@@ -1236,8 +1424,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_shiftExpression);
 						setState(387);
 						if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-						setState(388); match(RightShift);
-						setState(389); additiveExpression(0);
+						setState(388);
+						match(RightShift);
+						setState(389);
+						additiveExpression(0);
 						}
 						break;
 					}
@@ -1261,11 +1451,11 @@ public class CParser extends Parser {
 	}
 
 	public static class RelationalExpressionContext extends ParserRuleContext {
-		public RelationalExpressionContext relationalExpression() {
-			return getRuleContext(RelationalExpressionContext.class,0);
-		}
 		public ShiftExpressionContext shiftExpression() {
 			return getRuleContext(ShiftExpressionContext.class,0);
+		}
+		public RelationalExpressionContext relationalExpression() {
+			return getRuleContext(RelationalExpressionContext.class,0);
 		}
 		public RelationalExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1297,7 +1487,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(396); shiftExpression(0);
+			setState(396);
+			shiftExpression(0);
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(412);
@@ -1309,6 +1500,7 @@ public class CParser extends Parser {
 					_prevctx = _localctx;
 					{
 					setState(410);
+					_errHandler.sync(this);
 					switch ( getInterpreter().adaptivePredict(_input,18,_ctx) ) {
 					case 1:
 						{
@@ -1316,8 +1508,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_relationalExpression);
 						setState(398);
 						if (!(precpred(_ctx, 4))) throw new FailedPredicateException(this, "precpred(_ctx, 4)");
-						setState(399); match(Less);
-						setState(400); shiftExpression(0);
+						setState(399);
+						match(Less);
+						setState(400);
+						shiftExpression(0);
 						}
 						break;
 					case 2:
@@ -1326,8 +1520,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_relationalExpression);
 						setState(401);
 						if (!(precpred(_ctx, 3))) throw new FailedPredicateException(this, "precpred(_ctx, 3)");
-						setState(402); match(Greater);
-						setState(403); shiftExpression(0);
+						setState(402);
+						match(Greater);
+						setState(403);
+						shiftExpression(0);
 						}
 						break;
 					case 3:
@@ -1336,8 +1532,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_relationalExpression);
 						setState(404);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
-						setState(405); match(LessEqual);
-						setState(406); shiftExpression(0);
+						setState(405);
+						match(LessEqual);
+						setState(406);
+						shiftExpression(0);
 						}
 						break;
 					case 4:
@@ -1346,8 +1544,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_relationalExpression);
 						setState(407);
 						if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-						setState(408); match(GreaterEqual);
-						setState(409); shiftExpression(0);
+						setState(408);
+						match(GreaterEqual);
+						setState(409);
+						shiftExpression(0);
 						}
 						break;
 					}
@@ -1407,7 +1607,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(416); relationalExpression(0);
+			setState(416);
+			relationalExpression(0);
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(426);
@@ -1419,6 +1620,7 @@ public class CParser extends Parser {
 					_prevctx = _localctx;
 					{
 					setState(424);
+					_errHandler.sync(this);
 					switch ( getInterpreter().adaptivePredict(_input,20,_ctx) ) {
 					case 1:
 						{
@@ -1426,8 +1628,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_equalityExpression);
 						setState(418);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
-						setState(419); match(Equal);
-						setState(420); relationalExpression(0);
+						setState(419);
+						match(Equal);
+						setState(420);
+						relationalExpression(0);
 						}
 						break;
 					case 2:
@@ -1436,8 +1640,10 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_equalityExpression);
 						setState(421);
 						if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-						setState(422); match(NotEqual);
-						setState(423); relationalExpression(0);
+						setState(422);
+						match(NotEqual);
+						setState(423);
+						relationalExpression(0);
 						}
 						break;
 					}
@@ -1461,11 +1667,11 @@ public class CParser extends Parser {
 	}
 
 	public static class AndExpressionContext extends ParserRuleContext {
-		public AndExpressionContext andExpression() {
-			return getRuleContext(AndExpressionContext.class,0);
-		}
 		public EqualityExpressionContext equalityExpression() {
 			return getRuleContext(EqualityExpressionContext.class,0);
+		}
+		public AndExpressionContext andExpression() {
+			return getRuleContext(AndExpressionContext.class,0);
 		}
 		public AndExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1497,7 +1703,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(430); equalityExpression(0);
+			setState(430);
+			equalityExpression(0);
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(437);
@@ -1513,8 +1720,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_andExpression);
 					setState(432);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(433); match(And);
-					setState(434); equalityExpression(0);
+					setState(433);
+					match(And);
+					setState(434);
+					equalityExpression(0);
 					}
 					} 
 				}
@@ -1572,7 +1781,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(441); andExpression(0);
+			setState(441);
+			andExpression(0);
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(448);
@@ -1588,8 +1798,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_exclusiveOrExpression);
 					setState(443);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(444); match(Caret);
-					setState(445); andExpression(0);
+					setState(444);
+					match(Caret);
+					setState(445);
+					andExpression(0);
 					}
 					} 
 				}
@@ -1611,11 +1823,11 @@ public class CParser extends Parser {
 	}
 
 	public static class InclusiveOrExpressionContext extends ParserRuleContext {
-		public InclusiveOrExpressionContext inclusiveOrExpression() {
-			return getRuleContext(InclusiveOrExpressionContext.class,0);
-		}
 		public ExclusiveOrExpressionContext exclusiveOrExpression() {
 			return getRuleContext(ExclusiveOrExpressionContext.class,0);
+		}
+		public InclusiveOrExpressionContext inclusiveOrExpression() {
+			return getRuleContext(InclusiveOrExpressionContext.class,0);
 		}
 		public InclusiveOrExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1647,7 +1859,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(452); exclusiveOrExpression(0);
+			setState(452);
+			exclusiveOrExpression(0);
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(459);
@@ -1663,8 +1876,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_inclusiveOrExpression);
 					setState(454);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(455); match(Or);
-					setState(456); exclusiveOrExpression(0);
+					setState(455);
+					match(Or);
+					setState(456);
+					exclusiveOrExpression(0);
 					}
 					} 
 				}
@@ -1722,7 +1937,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(463); inclusiveOrExpression(0);
+			setState(463);
+			inclusiveOrExpression(0);
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(470);
@@ -1738,8 +1954,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_logicalAndExpression);
 					setState(465);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(466); match(AndAnd);
-					setState(467); inclusiveOrExpression(0);
+					setState(466);
+					match(AndAnd);
+					setState(467);
+					inclusiveOrExpression(0);
 					}
 					} 
 				}
@@ -1761,11 +1979,11 @@ public class CParser extends Parser {
 	}
 
 	public static class LogicalOrExpressionContext extends ParserRuleContext {
-		public LogicalOrExpressionContext logicalOrExpression() {
-			return getRuleContext(LogicalOrExpressionContext.class,0);
-		}
 		public LogicalAndExpressionContext logicalAndExpression() {
 			return getRuleContext(LogicalAndExpressionContext.class,0);
+		}
+		public LogicalOrExpressionContext logicalOrExpression() {
+			return getRuleContext(LogicalOrExpressionContext.class,0);
 		}
 		public LogicalOrExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1797,7 +2015,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(474); logicalAndExpression(0);
+			setState(474);
+			logicalAndExpression(0);
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(481);
@@ -1813,8 +2032,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_logicalOrExpression);
 					setState(476);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(477); match(OrOr);
-					setState(478); logicalAndExpression(0);
+					setState(477);
+					match(OrOr);
+					setState(478);
+					logicalAndExpression(0);
 					}
 					} 
 				}
@@ -1836,14 +2057,14 @@ public class CParser extends Parser {
 	}
 
 	public static class ConditionalExpressionContext extends ParserRuleContext {
-		public ConditionalExpressionContext conditionalExpression() {
-			return getRuleContext(ConditionalExpressionContext.class,0);
-		}
 		public LogicalOrExpressionContext logicalOrExpression() {
 			return getRuleContext(LogicalOrExpressionContext.class,0);
 		}
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
+		}
+		public ConditionalExpressionContext conditionalExpression() {
+			return getRuleContext(ConditionalExpressionContext.class,0);
 		}
 		public ConditionalExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1865,15 +2086,21 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(484); logicalOrExpression(0);
+			setState(484);
+			logicalOrExpression(0);
 			setState(490);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,27,_ctx) ) {
 			case 1:
 				{
-				setState(485); match(Question);
-				setState(486); expression(0);
-				setState(487); match(Colon);
-				setState(488); conditionalExpression();
+				setState(485);
+				match(Question);
+				setState(486);
+				expression(0);
+				setState(487);
+				match(Colon);
+				setState(488);
+				conditionalExpression();
 				}
 				break;
 			}
@@ -1897,11 +2124,11 @@ public class CParser extends Parser {
 		public UnaryExpressionContext unaryExpression() {
 			return getRuleContext(UnaryExpressionContext.class,0);
 		}
-		public AssignmentExpressionContext assignmentExpression() {
-			return getRuleContext(AssignmentExpressionContext.class,0);
-		}
 		public AssignmentOperatorContext assignmentOperator() {
 			return getRuleContext(AssignmentOperatorContext.class,0);
+		}
+		public AssignmentExpressionContext assignmentExpression() {
+			return getRuleContext(AssignmentExpressionContext.class,0);
 		}
 		public TerminalNode DigitSequence() { return getToken(CParser.DigitSequence, 0); }
 		public AssignmentExpressionContext(ParserRuleContext parent, int invokingState) {
@@ -1923,25 +2150,31 @@ public class CParser extends Parser {
 		enterRule(_localctx, 40, RULE_assignmentExpression);
 		try {
 			setState(498);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,28,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(492); conditionalExpression();
+				setState(492);
+				conditionalExpression();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(493); unaryExpression();
-				setState(494); assignmentOperator();
-				setState(495); assignmentExpression();
+				setState(493);
+				unaryExpression();
+				setState(494);
+				assignmentOperator();
+				setState(495);
+				assignmentExpression();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(497); match(DigitSequence);
+				setState(497);
+				match(DigitSequence);
 				}
 				break;
 			}
@@ -1984,7 +2217,11 @@ public class CParser extends Parser {
 			if ( !(((((_la - 89)) & ~0x3f) == 0 && ((1L << (_la - 89)) & ((1L << (Assign - 89)) | (1L << (StarAssign - 89)) | (1L << (DivAssign - 89)) | (1L << (ModAssign - 89)) | (1L << (PlusAssign - 89)) | (1L << (MinusAssign - 89)) | (1L << (LeftShiftAssign - 89)) | (1L << (RightShiftAssign - 89)) | (1L << (AndAssign - 89)) | (1L << (XorAssign - 89)) | (1L << (OrAssign - 89)))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
-			consume();
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -2035,7 +2272,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(503); assignmentExpression();
+			setState(503);
+			assignmentExpression();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(510);
@@ -2051,8 +2289,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_expression);
 					setState(505);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(506); match(Comma);
-					setState(507); assignmentExpression();
+					setState(506);
+					match(Comma);
+					setState(507);
+					assignmentExpression();
 					}
 					} 
 				}
@@ -2097,7 +2337,8 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(513); conditionalExpression();
+			setState(513);
+			conditionalExpression();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2112,14 +2353,14 @@ public class CParser extends Parser {
 	}
 
 	public static class DeclarationContext extends ParserRuleContext {
+		public DeclarationSpecifiersContext declarationSpecifiers() {
+			return getRuleContext(DeclarationSpecifiersContext.class,0);
+		}
 		public InitDeclaratorListContext initDeclaratorList() {
 			return getRuleContext(InitDeclaratorListContext.class,0);
 		}
 		public StaticAssertDeclarationContext staticAssertDeclaration() {
 			return getRuleContext(StaticAssertDeclarationContext.class,0);
-		}
-		public DeclarationSpecifiersContext declarationSpecifiers() {
-			return getRuleContext(DeclarationSpecifiersContext.class,0);
 		}
 		public DeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2140,26 +2381,33 @@ public class CParser extends Parser {
 		enterRule(_localctx, 48, RULE_declaration);
 		try {
 			setState(523);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,30,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(515); declarationSpecifiers();
-				setState(516); initDeclaratorList(0);
-				setState(517); match(Semi);
+				setState(515);
+				declarationSpecifiers();
+				setState(516);
+				initDeclaratorList(0);
+				setState(517);
+				match(Semi);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(519); declarationSpecifiers();
-				setState(520); match(Semi);
+				setState(519);
+				declarationSpecifiers();
+				setState(520);
+				match(Semi);
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(522); staticAssertDeclaration();
+				setState(522);
+				staticAssertDeclaration();
 				}
 				break;
 			}
@@ -2211,7 +2459,8 @@ public class CParser extends Parser {
 				case 1:
 					{
 					{
-					setState(525); declarationSpecifier();
+					setState(525);
+					declarationSpecifier();
 					}
 					}
 					break;
@@ -2271,7 +2520,8 @@ public class CParser extends Parser {
 				case 1:
 					{
 					{
-					setState(530); declarationSpecifier();
+					setState(530);
+					declarationSpecifier();
 					}
 					}
 					break;
@@ -2296,20 +2546,20 @@ public class CParser extends Parser {
 	}
 
 	public static class DeclarationSpecifierContext extends ParserRuleContext {
-		public FunctionSpecifierContext functionSpecifier() {
-			return getRuleContext(FunctionSpecifierContext.class,0);
+		public StorageClassSpecifierContext storageClassSpecifier() {
+			return getRuleContext(StorageClassSpecifierContext.class,0);
 		}
 		public TypeSpecifierContext typeSpecifier() {
 			return getRuleContext(TypeSpecifierContext.class,0);
 		}
-		public AlignmentSpecifierContext alignmentSpecifier() {
-			return getRuleContext(AlignmentSpecifierContext.class,0);
-		}
-		public StorageClassSpecifierContext storageClassSpecifier() {
-			return getRuleContext(StorageClassSpecifierContext.class,0);
-		}
 		public TypeQualifierContext typeQualifier() {
 			return getRuleContext(TypeQualifierContext.class,0);
+		}
+		public FunctionSpecifierContext functionSpecifier() {
+			return getRuleContext(FunctionSpecifierContext.class,0);
+		}
+		public AlignmentSpecifierContext alignmentSpecifier() {
+			return getRuleContext(AlignmentSpecifierContext.class,0);
 		}
 		public DeclarationSpecifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2330,35 +2580,41 @@ public class CParser extends Parser {
 		enterRule(_localctx, 54, RULE_declarationSpecifier);
 		try {
 			setState(540);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,33,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(535); storageClassSpecifier();
+				setState(535);
+				storageClassSpecifier();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(536); typeSpecifier();
+				setState(536);
+				typeSpecifier();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(537); typeQualifier();
+				setState(537);
+				typeQualifier();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(538); functionSpecifier();
+				setState(538);
+				functionSpecifier();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(539); alignmentSpecifier();
+				setState(539);
+				alignmentSpecifier();
 				}
 				break;
 			}
@@ -2411,7 +2667,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(543); initDeclarator();
+			setState(543);
+			initDeclarator();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(550);
@@ -2427,8 +2684,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_initDeclaratorList);
 					setState(545);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(546); match(Comma);
-					setState(547); initDeclarator();
+					setState(546);
+					match(Comma);
+					setState(547);
+					initDeclarator();
 					}
 					} 
 				}
@@ -2475,19 +2734,24 @@ public class CParser extends Parser {
 		enterRule(_localctx, 58, RULE_initDeclarator);
 		try {
 			setState(558);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,35,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(553); declarator();
+				setState(553);
+				declarator();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(554); declarator();
-				setState(555); match(Assign);
-				setState(556); initializer();
+				setState(554);
+				declarator();
+				setState(555);
+				match(Assign);
+				setState(556);
+				initializer();
 				}
 				break;
 			}
@@ -2530,7 +2794,11 @@ public class CParser extends Parser {
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Auto) | (1L << Extern) | (1L << Register) | (1L << Static) | (1L << Typedef) | (1L << ThreadLocal))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
-			consume();
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -2551,14 +2819,14 @@ public class CParser extends Parser {
 		public StructOrUnionSpecifierContext structOrUnionSpecifier() {
 			return getRuleContext(StructOrUnionSpecifierContext.class,0);
 		}
+		public EnumSpecifierContext enumSpecifier() {
+			return getRuleContext(EnumSpecifierContext.class,0);
+		}
 		public TypedefNameContext typedefName() {
 			return getRuleContext(TypedefNameContext.class,0);
 		}
 		public ConstantExpressionContext constantExpression() {
 			return getRuleContext(ConstantExpressionContext.class,0);
-		}
-		public EnumSpecifierContext enumSpecifier() {
-			return getRuleContext(EnumSpecifierContext.class,0);
 		}
 		public TypeSpecifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2580,10 +2848,11 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(576);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case T__5:
+			case T__3:
 			case T__4:
-			case T__1:
+			case T__5:
 			case Char:
 			case Double:
 			case Float:
@@ -2599,58 +2868,77 @@ public class CParser extends Parser {
 				{
 				setState(562);
 				_la = _input.LA(1);
-				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__5) | (1L << T__4) | (1L << T__1) | (1L << Char) | (1L << Double) | (1L << Float) | (1L << Int) | (1L << Long) | (1L << Short) | (1L << Signed) | (1L << Unsigned) | (1L << Void) | (1L << Bool) | (1L << Complex))) != 0)) ) {
+				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__3) | (1L << T__4) | (1L << T__5) | (1L << Char) | (1L << Double) | (1L << Float) | (1L << Int) | (1L << Long) | (1L << Short) | (1L << Signed) | (1L << Unsigned) | (1L << Void) | (1L << Bool) | (1L << Complex))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				}
 				break;
-			case T__13:
+			case T__0:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(563); match(T__13);
-				setState(564); match(LeftParen);
+				setState(563);
+				match(T__0);
+				setState(564);
+				match(LeftParen);
 				setState(565);
 				_la = _input.LA(1);
-				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__5) | (1L << T__4) | (1L << T__1))) != 0)) ) {
+				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__3) | (1L << T__4) | (1L << T__5))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(566); match(RightParen);
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(566);
+				match(RightParen);
 				}
 				break;
 			case Atomic:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(567); atomicTypeSpecifier();
+				setState(567);
+				atomicTypeSpecifier();
 				}
 				break;
 			case Struct:
 			case Union:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(568); structOrUnionSpecifier();
+				setState(568);
+				structOrUnionSpecifier();
 				}
 				break;
 			case Enum:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(569); enumSpecifier();
+				setState(569);
+				enumSpecifier();
 				}
 				break;
 			case Identifier:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(570); typedefName();
+				setState(570);
+				typedefName();
 				}
 				break;
-			case T__7:
+			case T__6:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(571); match(T__7);
-				setState(572); match(LeftParen);
-				setState(573); constantExpression();
-				setState(574); match(RightParen);
+				setState(571);
+				match(T__6);
+				setState(572);
+				match(LeftParen);
+				setState(573);
+				constantExpression();
+				setState(574);
+				match(RightParen);
 				}
 				break;
 			default:
@@ -2696,29 +2984,38 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(589);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,38,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(578); structOrUnion();
+				setState(578);
+				structOrUnion();
 				setState(580);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==Identifier) {
 					{
-					setState(579); match(Identifier);
+					setState(579);
+					match(Identifier);
 					}
 				}
 
-				setState(582); match(LeftBrace);
-				setState(583); structDeclarationList(0);
-				setState(584); match(RightBrace);
+				setState(582);
+				match(LeftBrace);
+				setState(583);
+				structDeclarationList(0);
+				setState(584);
+				match(RightBrace);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(586); structOrUnion();
-				setState(587); match(Identifier);
+				setState(586);
+				structOrUnion();
+				setState(587);
+				match(Identifier);
 				}
 				break;
 			}
@@ -2761,7 +3058,11 @@ public class CParser extends Parser {
 			if ( !(_la==Struct || _la==Union) ) {
 			_errHandler.recoverInline(this);
 			}
-			consume();
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -2776,11 +3077,11 @@ public class CParser extends Parser {
 	}
 
 	public static class StructDeclarationListContext extends ParserRuleContext {
-		public StructDeclarationListContext structDeclarationList() {
-			return getRuleContext(StructDeclarationListContext.class,0);
-		}
 		public StructDeclarationContext structDeclaration() {
 			return getRuleContext(StructDeclarationContext.class,0);
+		}
+		public StructDeclarationListContext structDeclarationList() {
+			return getRuleContext(StructDeclarationListContext.class,0);
 		}
 		public StructDeclarationListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2812,7 +3113,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(594); structDeclaration();
+			setState(594);
+			structDeclaration();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(600);
@@ -2828,7 +3130,8 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_structDeclarationList);
 					setState(596);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(597); structDeclaration();
+					setState(597);
+					structDeclaration();
 					}
 					} 
 				}
@@ -2850,14 +3153,14 @@ public class CParser extends Parser {
 	}
 
 	public static class StructDeclarationContext extends ParserRuleContext {
-		public StaticAssertDeclarationContext staticAssertDeclaration() {
-			return getRuleContext(StaticAssertDeclarationContext.class,0);
+		public SpecifierQualifierListContext specifierQualifierList() {
+			return getRuleContext(SpecifierQualifierListContext.class,0);
 		}
 		public StructDeclaratorListContext structDeclaratorList() {
 			return getRuleContext(StructDeclaratorListContext.class,0);
 		}
-		public SpecifierQualifierListContext specifierQualifierList() {
-			return getRuleContext(SpecifierQualifierListContext.class,0);
+		public StaticAssertDeclarationContext staticAssertDeclaration() {
+			return getRuleContext(StaticAssertDeclarationContext.class,0);
 		}
 		public StructDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2879,12 +3182,13 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(610);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case T__13:
-			case T__7:
-			case T__5:
+			case T__0:
+			case T__3:
 			case T__4:
-			case T__1:
+			case T__5:
+			case T__6:
 			case Char:
 			case Const:
 			case Double:
@@ -2906,22 +3210,27 @@ public class CParser extends Parser {
 			case Identifier:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(603); specifierQualifierList();
+				setState(603);
+				specifierQualifierList();
 				setState(605);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (((((_la - 59)) & ~0x3f) == 0 && ((1L << (_la - 59)) & ((1L << (LeftParen - 59)) | (1L << (Star - 59)) | (1L << (Caret - 59)) | (1L << (Colon - 59)) | (1L << (Identifier - 59)))) != 0)) {
 					{
-					setState(604); structDeclaratorList(0);
+					setState(604);
+					structDeclaratorList(0);
 					}
 				}
 
-				setState(607); match(Semi);
+				setState(607);
+				match(Semi);
 				}
 				break;
 			case StaticAssert:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(609); staticAssertDeclaration();
+				setState(609);
+				staticAssertDeclaration();
 				}
 				break;
 			default:
@@ -2968,16 +3277,20 @@ public class CParser extends Parser {
 		enterRule(_localctx, 72, RULE_specifierQualifierList);
 		try {
 			setState(620);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,44,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(612); typeSpecifier();
+				setState(612);
+				typeSpecifier();
 				setState(614);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,42,_ctx) ) {
 				case 1:
 					{
-					setState(613); specifierQualifierList();
+					setState(613);
+					specifierQualifierList();
 					}
 					break;
 				}
@@ -2986,12 +3299,15 @@ public class CParser extends Parser {
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(616); typeQualifier();
+				setState(616);
+				typeQualifier();
 				setState(618);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,43,_ctx) ) {
 				case 1:
 					{
-					setState(617); specifierQualifierList();
+					setState(617);
+					specifierQualifierList();
 					}
 					break;
 				}
@@ -3047,7 +3363,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(623); structDeclarator();
+			setState(623);
+			structDeclarator();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(630);
@@ -3063,8 +3380,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_structDeclaratorList);
 					setState(625);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(626); match(Comma);
-					setState(627); structDeclarator();
+					setState(626);
+					match(Comma);
+					setState(627);
+					structDeclarator();
 					}
 					} 
 				}
@@ -3112,26 +3431,32 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(639);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,47,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(633); declarator();
+				setState(633);
+				declarator();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(635);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (((((_la - 59)) & ~0x3f) == 0 && ((1L << (_la - 59)) & ((1L << (LeftParen - 59)) | (1L << (Star - 59)) | (1L << (Caret - 59)) | (1L << (Identifier - 59)))) != 0)) {
 					{
-					setState(634); declarator();
+					setState(634);
+					declarator();
 					}
 				}
 
-				setState(637); match(Colon);
-				setState(638); constantExpression();
+				setState(637);
+				match(Colon);
+				setState(638);
+				constantExpression();
 				}
 				break;
 			}
@@ -3148,10 +3473,10 @@ public class CParser extends Parser {
 	}
 
 	public static class EnumSpecifierContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
 		public EnumeratorListContext enumeratorList() {
 			return getRuleContext(EnumeratorListContext.class,0);
 		}
+		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
 		public EnumSpecifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -3172,47 +3497,63 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(660);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,50,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(641); match(Enum);
+				setState(641);
+				match(Enum);
 				setState(643);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==Identifier) {
 					{
-					setState(642); match(Identifier);
+					setState(642);
+					match(Identifier);
 					}
 				}
 
-				setState(645); match(LeftBrace);
-				setState(646); enumeratorList(0);
-				setState(647); match(RightBrace);
+				setState(645);
+				match(LeftBrace);
+				setState(646);
+				enumeratorList(0);
+				setState(647);
+				match(RightBrace);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(649); match(Enum);
+				setState(649);
+				match(Enum);
 				setState(651);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==Identifier) {
 					{
-					setState(650); match(Identifier);
+					setState(650);
+					match(Identifier);
 					}
 				}
 
-				setState(653); match(LeftBrace);
-				setState(654); enumeratorList(0);
-				setState(655); match(Comma);
-				setState(656); match(RightBrace);
+				setState(653);
+				match(LeftBrace);
+				setState(654);
+				enumeratorList(0);
+				setState(655);
+				match(Comma);
+				setState(656);
+				match(RightBrace);
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(658); match(Enum);
-				setState(659); match(Identifier);
+				setState(658);
+				match(Enum);
+				setState(659);
+				match(Identifier);
 				}
 				break;
 			}
@@ -3265,7 +3606,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(663); enumerator();
+			setState(663);
+			enumerator();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(670);
@@ -3281,8 +3623,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_enumeratorList);
 					setState(665);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(666); match(Comma);
-					setState(667); enumerator();
+					setState(666);
+					match(Comma);
+					setState(667);
+					enumerator();
 					}
 					} 
 				}
@@ -3329,19 +3673,24 @@ public class CParser extends Parser {
 		enterRule(_localctx, 82, RULE_enumerator);
 		try {
 			setState(678);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,52,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(673); enumerationConstant();
+				setState(673);
+				enumerationConstant();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(674); enumerationConstant();
-				setState(675); match(Assign);
-				setState(676); constantExpression();
+				setState(674);
+				enumerationConstant();
+				setState(675);
+				match(Assign);
+				setState(676);
+				constantExpression();
 				}
 				break;
 			}
@@ -3379,7 +3728,8 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(680); match(Identifier);
+			setState(680);
+			match(Identifier);
 			}
 		}
 		catch (RecognitionException re) {
@@ -3417,10 +3767,14 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(682); match(Atomic);
-			setState(683); match(LeftParen);
-			setState(684); typeName();
-			setState(685); match(RightParen);
+			setState(682);
+			match(Atomic);
+			setState(683);
+			match(LeftParen);
+			setState(684);
+			typeName();
+			setState(685);
+			match(RightParen);
 			}
 		}
 		catch (RecognitionException re) {
@@ -3461,7 +3815,11 @@ public class CParser extends Parser {
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Const) | (1L << Restrict) | (1L << Volatile) | (1L << Atomic))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
-			consume();
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -3476,10 +3834,10 @@ public class CParser extends Parser {
 	}
 
 	public static class FunctionSpecifierContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
 		public GccAttributeSpecifierContext gccAttributeSpecifier() {
 			return getRuleContext(GccAttributeSpecifierContext.class,0);
 		}
+		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
 		public FunctionSpecifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -3500,34 +3858,44 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(695);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case T__11:
-			case T__2:
+			case T__7:
+			case T__8:
 			case Inline:
 			case Noreturn:
 				enterOuterAlt(_localctx, 1);
 				{
 				setState(689);
 				_la = _input.LA(1);
-				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__11) | (1L << T__2) | (1L << Inline) | (1L << Noreturn))) != 0)) ) {
+				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__7) | (1L << T__8) | (1L << Inline) | (1L << Noreturn))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				}
 				break;
-			case T__3:
+			case T__11:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(690); gccAttributeSpecifier();
+				setState(690);
+				gccAttributeSpecifier();
 				}
 				break;
 			case T__9:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(691); match(T__9);
-				setState(692); match(LeftParen);
-				setState(693); match(Identifier);
-				setState(694); match(RightParen);
+				setState(691);
+				match(T__9);
+				setState(692);
+				match(LeftParen);
+				setState(693);
+				match(Identifier);
+				setState(694);
+				match(RightParen);
 				}
 				break;
 			default:
@@ -3571,23 +3939,32 @@ public class CParser extends Parser {
 		enterRule(_localctx, 92, RULE_alignmentSpecifier);
 		try {
 			setState(707);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,54,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(697); match(Alignas);
-				setState(698); match(LeftParen);
-				setState(699); typeName();
-				setState(700); match(RightParen);
+				setState(697);
+				match(Alignas);
+				setState(698);
+				match(LeftParen);
+				setState(699);
+				typeName();
+				setState(700);
+				match(RightParen);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(702); match(Alignas);
-				setState(703); match(LeftParen);
-				setState(704); constantExpression();
-				setState(705); match(RightParen);
+				setState(702);
+				match(Alignas);
+				setState(703);
+				match(LeftParen);
+				setState(704);
+				constantExpression();
+				setState(705);
+				match(RightParen);
 				}
 				break;
 			}
@@ -3607,11 +3984,11 @@ public class CParser extends Parser {
 		public DirectDeclaratorContext directDeclarator() {
 			return getRuleContext(DirectDeclaratorContext.class,0);
 		}
-		public List<GccDeclaratorExtensionContext> gccDeclaratorExtension() {
-			return getRuleContexts(GccDeclaratorExtensionContext.class);
-		}
 		public PointerContext pointer() {
 			return getRuleContext(PointerContext.class,0);
+		}
+		public List<GccDeclaratorExtensionContext> gccDeclaratorExtension() {
+			return getRuleContexts(GccDeclaratorExtensionContext.class);
 		}
 		public GccDeclaratorExtensionContext gccDeclaratorExtension(int i) {
 			return getRuleContext(GccDeclaratorExtensionContext.class,i);
@@ -3639,14 +4016,17 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(710);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==Star || _la==Caret) {
 				{
-				setState(709); pointer();
+				setState(709);
+				pointer();
 				}
 			}
 
-			setState(712); directDeclarator(0);
+			setState(712);
+			directDeclarator(0);
 			setState(716);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,56,_ctx);
@@ -3654,7 +4034,8 @@ public class CParser extends Parser {
 				if ( _alt==1 ) {
 					{
 					{
-					setState(713); gccDeclaratorExtension();
+					setState(713);
+					gccDeclaratorExtension();
 					}
 					} 
 				}
@@ -3676,18 +4057,16 @@ public class CParser extends Parser {
 	}
 
 	public static class DirectDeclaratorContext extends ParserRuleContext {
-		public TypeQualifierListContext typeQualifierList() {
-			return getRuleContext(TypeQualifierListContext.class,0);
-		}
 		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
-		public DirectDeclaratorContext directDeclarator() {
-			return getRuleContext(DirectDeclaratorContext.class,0);
-		}
 		public DeclaratorContext declarator() {
 			return getRuleContext(DeclaratorContext.class,0);
 		}
-		public IdentifierListContext identifierList() {
-			return getRuleContext(IdentifierListContext.class,0);
+		public TerminalNode DigitSequence() { return getToken(CParser.DigitSequence, 0); }
+		public DirectDeclaratorContext directDeclarator() {
+			return getRuleContext(DirectDeclaratorContext.class,0);
+		}
+		public TypeQualifierListContext typeQualifierList() {
+			return getRuleContext(TypeQualifierListContext.class,0);
 		}
 		public AssignmentExpressionContext assignmentExpression() {
 			return getRuleContext(AssignmentExpressionContext.class,0);
@@ -3695,7 +4074,9 @@ public class CParser extends Parser {
 		public ParameterTypeListContext parameterTypeList() {
 			return getRuleContext(ParameterTypeListContext.class,0);
 		}
-		public TerminalNode DigitSequence() { return getToken(CParser.DigitSequence, 0); }
+		public IdentifierListContext identifierList() {
+			return getRuleContext(IdentifierListContext.class,0);
+		}
 		public DirectDeclaratorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -3727,24 +4108,32 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(728);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,57,_ctx) ) {
 			case 1:
 				{
-				setState(720); match(Identifier);
+				setState(720);
+				match(Identifier);
 				}
 				break;
 			case 2:
 				{
-				setState(721); match(LeftParen);
-				setState(722); declarator();
-				setState(723); match(RightParen);
+				setState(721);
+				match(LeftParen);
+				setState(722);
+				declarator();
+				setState(723);
+				match(RightParen);
 				}
 				break;
 			case 3:
 				{
-				setState(725); match(Identifier);
-				setState(726); match(Colon);
-				setState(727); match(DigitSequence);
+				setState(725);
+				match(Identifier);
+				setState(726);
+				match(Colon);
+				setState(727);
+				match(DigitSequence);
 				}
 				break;
 			}
@@ -3758,6 +4147,7 @@ public class CParser extends Parser {
 					_prevctx = _localctx;
 					{
 					setState(773);
+					_errHandler.sync(this);
 					switch ( getInterpreter().adaptivePredict(_input,63,_ctx) ) {
 					case 1:
 						{
@@ -3765,24 +4155,30 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directDeclarator);
 						setState(730);
 						if (!(precpred(_ctx, 7))) throw new FailedPredicateException(this, "precpred(_ctx, 7)");
-						setState(731); match(LeftBracket);
+						setState(731);
+						match(LeftBracket);
 						setState(733);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
 						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Const) | (1L << Restrict) | (1L << Volatile) | (1L << Atomic))) != 0)) {
 							{
-							setState(732); typeQualifierList(0);
+							setState(732);
+							typeQualifierList(0);
 							}
 						}
 
 						setState(736);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
-						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 							{
-							setState(735); assignmentExpression();
+							setState(735);
+							assignmentExpression();
 							}
 						}
 
-						setState(738); match(RightBracket);
+						setState(738);
+						match(RightBracket);
 						}
 						break;
 					case 2:
@@ -3791,18 +4187,24 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directDeclarator);
 						setState(739);
 						if (!(precpred(_ctx, 6))) throw new FailedPredicateException(this, "precpred(_ctx, 6)");
-						setState(740); match(LeftBracket);
-						setState(741); match(Static);
+						setState(740);
+						match(LeftBracket);
+						setState(741);
+						match(Static);
 						setState(743);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
 						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Const) | (1L << Restrict) | (1L << Volatile) | (1L << Atomic))) != 0)) {
 							{
-							setState(742); typeQualifierList(0);
+							setState(742);
+							typeQualifierList(0);
 							}
 						}
 
-						setState(745); assignmentExpression();
-						setState(746); match(RightBracket);
+						setState(745);
+						assignmentExpression();
+						setState(746);
+						match(RightBracket);
 						}
 						break;
 					case 3:
@@ -3811,11 +4213,16 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directDeclarator);
 						setState(748);
 						if (!(precpred(_ctx, 5))) throw new FailedPredicateException(this, "precpred(_ctx, 5)");
-						setState(749); match(LeftBracket);
-						setState(750); typeQualifierList(0);
-						setState(751); match(Static);
-						setState(752); assignmentExpression();
-						setState(753); match(RightBracket);
+						setState(749);
+						match(LeftBracket);
+						setState(750);
+						typeQualifierList(0);
+						setState(751);
+						match(Static);
+						setState(752);
+						assignmentExpression();
+						setState(753);
+						match(RightBracket);
 						}
 						break;
 					case 4:
@@ -3824,17 +4231,22 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directDeclarator);
 						setState(755);
 						if (!(precpred(_ctx, 4))) throw new FailedPredicateException(this, "precpred(_ctx, 4)");
-						setState(756); match(LeftBracket);
+						setState(756);
+						match(LeftBracket);
 						setState(758);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
 						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Const) | (1L << Restrict) | (1L << Volatile) | (1L << Atomic))) != 0)) {
 							{
-							setState(757); typeQualifierList(0);
+							setState(757);
+							typeQualifierList(0);
 							}
 						}
 
-						setState(760); match(Star);
-						setState(761); match(RightBracket);
+						setState(760);
+						match(Star);
+						setState(761);
+						match(RightBracket);
 						}
 						break;
 					case 5:
@@ -3843,9 +4255,12 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directDeclarator);
 						setState(762);
 						if (!(precpred(_ctx, 3))) throw new FailedPredicateException(this, "precpred(_ctx, 3)");
-						setState(763); match(LeftParen);
-						setState(764); parameterTypeList();
-						setState(765); match(RightParen);
+						setState(763);
+						match(LeftParen);
+						setState(764);
+						parameterTypeList();
+						setState(765);
+						match(RightParen);
 						}
 						break;
 					case 6:
@@ -3854,16 +4269,20 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directDeclarator);
 						setState(767);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
-						setState(768); match(LeftParen);
+						setState(768);
+						match(LeftParen);
 						setState(770);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
 						if (_la==Identifier) {
 							{
-							setState(769); identifierList(0);
+							setState(769);
+							identifierList(0);
 							}
 						}
 
-						setState(772); match(RightParen);
+						setState(772);
+						match(RightParen);
 						}
 						break;
 					}
@@ -3888,11 +4307,11 @@ public class CParser extends Parser {
 
 	public static class GccDeclaratorExtensionContext extends ParserRuleContext {
 		public List<TerminalNode> StringLiteral() { return getTokens(CParser.StringLiteral); }
-		public GccAttributeSpecifierContext gccAttributeSpecifier() {
-			return getRuleContext(GccAttributeSpecifierContext.class,0);
-		}
 		public TerminalNode StringLiteral(int i) {
 			return getToken(CParser.StringLiteral, i);
+		}
+		public GccAttributeSpecifierContext gccAttributeSpecifier() {
+			return getRuleContext(GccAttributeSpecifierContext.class,0);
 		}
 		public GccDeclaratorExtensionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3914,32 +4333,38 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(787);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case T__6:
+			case T__10:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(778); match(T__6);
-				setState(779); match(LeftParen);
+				setState(778);
+				match(T__10);
+				setState(779);
+				match(LeftParen);
 				setState(781); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				do {
 					{
 					{
-					setState(780); match(StringLiteral);
+					setState(780);
+					match(StringLiteral);
 					}
 					}
 					setState(783); 
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				} while ( _la==StringLiteral );
-				setState(785); match(RightParen);
+				setState(785);
+				match(RightParen);
 				}
 				break;
-			case T__3:
+			case T__11:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(786); gccAttributeSpecifier();
+				setState(786);
+				gccAttributeSpecifier();
 				}
 				break;
 			default:
@@ -3981,12 +4406,18 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(789); match(T__3);
-			setState(790); match(LeftParen);
-			setState(791); match(LeftParen);
-			setState(792); gccAttributeList();
-			setState(793); match(RightParen);
-			setState(794); match(RightParen);
+			setState(789);
+			match(T__11);
+			setState(790);
+			match(LeftParen);
+			setState(791);
+			match(LeftParen);
+			setState(792);
+			gccAttributeList();
+			setState(793);
+			match(RightParen);
+			setState(794);
+			match(RightParen);
 			}
 		}
 		catch (RecognitionException re) {
@@ -4001,11 +4432,11 @@ public class CParser extends Parser {
 	}
 
 	public static class GccAttributeListContext extends ParserRuleContext {
-		public GccAttributeContext gccAttribute(int i) {
-			return getRuleContext(GccAttributeContext.class,i);
-		}
 		public List<GccAttributeContext> gccAttribute() {
 			return getRuleContexts(GccAttributeContext.class);
+		}
+		public GccAttributeContext gccAttribute(int i) {
+			return getRuleContext(GccAttributeContext.class,i);
 		}
 		public GccAttributeListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4027,19 +4458,23 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(805);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,68,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(796); gccAttribute();
+				setState(796);
+				gccAttribute();
 				setState(801);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				while (_la==Comma) {
 					{
 					{
-					setState(797); match(Comma);
-					setState(798); gccAttribute();
+					setState(797);
+					match(Comma);
+					setState(798);
+					gccAttribute();
 					}
 					}
 					setState(803);
@@ -4090,21 +4525,22 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(816);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case T__13:
-			case T__12:
-			case T__11:
-			case T__10:
-			case T__9:
-			case T__8:
-			case T__7:
-			case T__6:
-			case T__5:
-			case T__4:
-			case T__3:
-			case T__2:
-			case T__1:
 			case T__0:
+			case T__1:
+			case T__2:
+			case T__3:
+			case T__4:
+			case T__5:
+			case T__6:
+			case T__7:
+			case T__8:
+			case T__9:
+			case T__10:
+			case T__11:
+			case T__12:
+			case T__13:
 			case Auto:
 			case Break:
 			case Case:
@@ -4212,21 +4648,30 @@ public class CParser extends Parser {
 				if ( _la <= 0 || (((((_la - 59)) & ~0x3f) == 0 && ((1L << (_la - 59)) & ((1L << (LeftParen - 59)) | (1L << (RightParen - 59)) | (1L << (Comma - 59)))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				setState(813);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==LeftParen) {
 					{
-					setState(808); match(LeftParen);
+					setState(808);
+					match(LeftParen);
 					setState(810);
+					_errHandler.sync(this);
 					_la = _input.LA(1);
-					if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+					if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 						{
-						setState(809); argumentExpressionList(0);
+						setState(809);
+						argumentExpressionList(0);
 						}
 					}
 
-					setState(812); match(RightParen);
+					setState(812);
+					match(RightParen);
 					}
 				}
 
@@ -4254,11 +4699,11 @@ public class CParser extends Parser {
 	}
 
 	public static class NestedParenthesesBlockContext extends ParserRuleContext {
-		public NestedParenthesesBlockContext nestedParenthesesBlock(int i) {
-			return getRuleContext(NestedParenthesesBlockContext.class,i);
-		}
 		public List<NestedParenthesesBlockContext> nestedParenthesesBlock() {
 			return getRuleContexts(NestedParenthesesBlockContext.class);
+		}
+		public NestedParenthesesBlockContext nestedParenthesesBlock(int i) {
+			return getRuleContext(NestedParenthesesBlockContext.class,i);
 		}
 		public NestedParenthesesBlockContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4284,24 +4729,25 @@ public class CParser extends Parser {
 			setState(825);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__12) | (1L << T__11) | (1L << T__10) | (1L << T__9) | (1L << T__8) | (1L << T__7) | (1L << T__6) | (1L << T__5) | (1L << T__4) | (1L << T__3) | (1L << T__2) | (1L << T__1) | (1L << T__0) | (1L << Auto) | (1L << Break) | (1L << Case) | (1L << Char) | (1L << Const) | (1L << Continue) | (1L << Default) | (1L << Do) | (1L << Double) | (1L << Else) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << For) | (1L << Goto) | (1L << If) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Return) | (1L << Short) | (1L << Signed) | (1L << Sizeof) | (1L << Static) | (1L << Struct) | (1L << Switch) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << While) | (1L << Alignas) | (1L << Alignof) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Generic) | (1L << Imaginary) | (1L << Noreturn) | (1L << StaticAssert) | (1L << ThreadLocal) | (1L << LeftParen) | (1L << LeftBracket) | (1L << RightBracket) | (1L << LeftBrace))) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & ((1L << (RightBrace - 64)) | (1L << (Less - 64)) | (1L << (LessEqual - 64)) | (1L << (Greater - 64)) | (1L << (GreaterEqual - 64)) | (1L << (LeftShift - 64)) | (1L << (RightShift - 64)) | (1L << (Plus - 64)) | (1L << (PlusPlus - 64)) | (1L << (Minus - 64)) | (1L << (MinusMinus - 64)) | (1L << (Star - 64)) | (1L << (Div - 64)) | (1L << (Mod - 64)) | (1L << (And - 64)) | (1L << (Or - 64)) | (1L << (AndAnd - 64)) | (1L << (OrOr - 64)) | (1L << (Caret - 64)) | (1L << (Not - 64)) | (1L << (Tilde - 64)) | (1L << (Question - 64)) | (1L << (Colon - 64)) | (1L << (Semi - 64)) | (1L << (Comma - 64)) | (1L << (Assign - 64)) | (1L << (StarAssign - 64)) | (1L << (DivAssign - 64)) | (1L << (ModAssign - 64)) | (1L << (PlusAssign - 64)) | (1L << (MinusAssign - 64)) | (1L << (LeftShiftAssign - 64)) | (1L << (RightShiftAssign - 64)) | (1L << (AndAssign - 64)) | (1L << (XorAssign - 64)) | (1L << (OrAssign - 64)) | (1L << (Equal - 64)) | (1L << (NotEqual - 64)) | (1L << (Arrow - 64)) | (1L << (Dot - 64)) | (1L << (Ellipsis - 64)) | (1L << (Identifier - 64)) | (1L << (Constant - 64)) | (1L << (DigitSequence - 64)) | (1L << (StringLiteral - 64)) | (1L << (ComplexDefine - 64)) | (1L << (AsmBlock - 64)) | (1L << (LineAfterPreprocessing - 64)) | (1L << (LineDirective - 64)) | (1L << (PragmaDirective - 64)) | (1L << (Whitespace - 64)) | (1L << (Newline - 64)) | (1L << (BlockComment - 64)) | (1L << (LineComment - 64)))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << T__3) | (1L << T__4) | (1L << T__5) | (1L << T__6) | (1L << T__7) | (1L << T__8) | (1L << T__9) | (1L << T__10) | (1L << T__11) | (1L << T__12) | (1L << T__13) | (1L << Auto) | (1L << Break) | (1L << Case) | (1L << Char) | (1L << Const) | (1L << Continue) | (1L << Default) | (1L << Do) | (1L << Double) | (1L << Else) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << For) | (1L << Goto) | (1L << If) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Return) | (1L << Short) | (1L << Signed) | (1L << Sizeof) | (1L << Static) | (1L << Struct) | (1L << Switch) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << While) | (1L << Alignas) | (1L << Alignof) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Generic) | (1L << Imaginary) | (1L << Noreturn) | (1L << StaticAssert) | (1L << ThreadLocal) | (1L << LeftParen) | (1L << LeftBracket) | (1L << RightBracket) | (1L << LeftBrace))) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & ((1L << (RightBrace - 64)) | (1L << (Less - 64)) | (1L << (LessEqual - 64)) | (1L << (Greater - 64)) | (1L << (GreaterEqual - 64)) | (1L << (LeftShift - 64)) | (1L << (RightShift - 64)) | (1L << (Plus - 64)) | (1L << (PlusPlus - 64)) | (1L << (Minus - 64)) | (1L << (MinusMinus - 64)) | (1L << (Star - 64)) | (1L << (Div - 64)) | (1L << (Mod - 64)) | (1L << (And - 64)) | (1L << (Or - 64)) | (1L << (AndAnd - 64)) | (1L << (OrOr - 64)) | (1L << (Caret - 64)) | (1L << (Not - 64)) | (1L << (Tilde - 64)) | (1L << (Question - 64)) | (1L << (Colon - 64)) | (1L << (Semi - 64)) | (1L << (Comma - 64)) | (1L << (Assign - 64)) | (1L << (StarAssign - 64)) | (1L << (DivAssign - 64)) | (1L << (ModAssign - 64)) | (1L << (PlusAssign - 64)) | (1L << (MinusAssign - 64)) | (1L << (LeftShiftAssign - 64)) | (1L << (RightShiftAssign - 64)) | (1L << (AndAssign - 64)) | (1L << (XorAssign - 64)) | (1L << (OrAssign - 64)) | (1L << (Equal - 64)) | (1L << (NotEqual - 64)) | (1L << (Arrow - 64)) | (1L << (Dot - 64)) | (1L << (Ellipsis - 64)) | (1L << (Identifier - 64)) | (1L << (Constant - 64)) | (1L << (DigitSequence - 64)) | (1L << (StringLiteral - 64)) | (1L << (ComplexDefine - 64)) | (1L << (AsmBlock - 64)) | (1L << (LineAfterPreprocessing - 64)) | (1L << (LineDirective - 64)) | (1L << (PragmaDirective - 64)) | (1L << (Whitespace - 64)) | (1L << (Newline - 64)) | (1L << (BlockComment - 64)) | (1L << (LineComment - 64)))) != 0)) {
 				{
 				setState(823);
+				_errHandler.sync(this);
 				switch (_input.LA(1)) {
-				case T__13:
-				case T__12:
-				case T__11:
-				case T__10:
-				case T__9:
-				case T__8:
-				case T__7:
-				case T__6:
-				case T__5:
-				case T__4:
-				case T__3:
-				case T__2:
-				case T__1:
 				case T__0:
+				case T__1:
+				case T__2:
+				case T__3:
+				case T__4:
+				case T__5:
+				case T__6:
+				case T__7:
+				case T__8:
+				case T__9:
+				case T__10:
+				case T__11:
+				case T__12:
+				case T__13:
 				case Auto:
 				case Break:
 				case Case:
@@ -4409,14 +4855,21 @@ public class CParser extends Parser {
 					if ( _la <= 0 || (_la==LeftParen || _la==RightParen) ) {
 					_errHandler.recoverInline(this);
 					}
-					consume();
+					else {
+						if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+						_errHandler.reportMatch(this);
+						consume();
+					}
 					}
 					break;
 				case LeftParen:
 					{
-					setState(819); match(LeftParen);
-					setState(820); nestedParenthesesBlock();
-					setState(821); match(RightParen);
+					setState(819);
+					match(LeftParen);
+					setState(820);
+					nestedParenthesesBlock();
+					setState(821);
+					match(RightParen);
 					}
 					break;
 				default:
@@ -4467,16 +4920,20 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(846);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,78,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(828); match(Star);
+				setState(828);
+				match(Star);
 				setState(830);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,74,_ctx) ) {
 				case 1:
 					{
-					setState(829); typeQualifierList(0);
+					setState(829);
+					typeQualifierList(0);
 					}
 					break;
 				}
@@ -4485,27 +4942,34 @@ public class CParser extends Parser {
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(832); match(Star);
+				setState(832);
+				match(Star);
 				setState(834);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Const) | (1L << Restrict) | (1L << Volatile) | (1L << Atomic))) != 0)) {
 					{
-					setState(833); typeQualifierList(0);
+					setState(833);
+					typeQualifierList(0);
 					}
 				}
 
-				setState(836); pointer();
+				setState(836);
+				pointer();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(837); match(Caret);
+				setState(837);
+				match(Caret);
 				setState(839);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,76,_ctx) ) {
 				case 1:
 					{
-					setState(838); typeQualifierList(0);
+					setState(838);
+					typeQualifierList(0);
 					}
 					break;
 				}
@@ -4514,16 +4978,20 @@ public class CParser extends Parser {
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(841); match(Caret);
+				setState(841);
+				match(Caret);
 				setState(843);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Const) | (1L << Restrict) | (1L << Volatile) | (1L << Atomic))) != 0)) {
 					{
-					setState(842); typeQualifierList(0);
+					setState(842);
+					typeQualifierList(0);
 					}
 				}
 
-				setState(845); pointer();
+				setState(845);
+				pointer();
 				}
 				break;
 			}
@@ -4540,11 +5008,11 @@ public class CParser extends Parser {
 	}
 
 	public static class TypeQualifierListContext extends ParserRuleContext {
-		public TypeQualifierListContext typeQualifierList() {
-			return getRuleContext(TypeQualifierListContext.class,0);
-		}
 		public TypeQualifierContext typeQualifier() {
 			return getRuleContext(TypeQualifierContext.class,0);
+		}
+		public TypeQualifierListContext typeQualifierList() {
+			return getRuleContext(TypeQualifierListContext.class,0);
 		}
 		public TypeQualifierListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4576,7 +5044,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(849); typeQualifier();
+			setState(849);
+			typeQualifier();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(855);
@@ -4592,7 +5061,8 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_typeQualifierList);
 					setState(851);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(852); typeQualifier();
+					setState(852);
+					typeQualifier();
 					}
 					} 
 				}
@@ -4636,19 +5106,24 @@ public class CParser extends Parser {
 		enterRule(_localctx, 112, RULE_parameterTypeList);
 		try {
 			setState(863);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,80,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(858); parameterList(0);
+				setState(858);
+				parameterList(0);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(859); parameterList(0);
-				setState(860); match(Comma);
-				setState(861); match(Ellipsis);
+				setState(859);
+				parameterList(0);
+				setState(860);
+				match(Comma);
+				setState(861);
+				match(Ellipsis);
 				}
 				break;
 			}
@@ -4701,7 +5176,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(866); parameterDeclaration();
+			setState(866);
+			parameterDeclaration();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(873);
@@ -4717,8 +5193,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_parameterList);
 					setState(868);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(869); match(Comma);
-					setState(870); parameterDeclaration();
+					setState(869);
+					match(Comma);
+					setState(870);
+					parameterDeclaration();
 					}
 					} 
 				}
@@ -4740,8 +5218,8 @@ public class CParser extends Parser {
 	}
 
 	public static class ParameterDeclarationContext extends ParserRuleContext {
-		public AbstractDeclaratorContext abstractDeclarator() {
-			return getRuleContext(AbstractDeclaratorContext.class,0);
+		public DeclarationSpecifiersContext declarationSpecifiers() {
+			return getRuleContext(DeclarationSpecifiersContext.class,0);
 		}
 		public DeclaratorContext declarator() {
 			return getRuleContext(DeclaratorContext.class,0);
@@ -4749,8 +5227,8 @@ public class CParser extends Parser {
 		public DeclarationSpecifiers2Context declarationSpecifiers2() {
 			return getRuleContext(DeclarationSpecifiers2Context.class,0);
 		}
-		public DeclarationSpecifiersContext declarationSpecifiers() {
-			return getRuleContext(DeclarationSpecifiersContext.class,0);
+		public AbstractDeclaratorContext abstractDeclarator() {
+			return getRuleContext(AbstractDeclaratorContext.class,0);
 		}
 		public ParameterDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4771,23 +5249,29 @@ public class CParser extends Parser {
 		enterRule(_localctx, 116, RULE_parameterDeclaration);
 		try {
 			setState(883);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,83,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(876); declarationSpecifiers();
-				setState(877); declarator();
+				setState(876);
+				declarationSpecifiers();
+				setState(877);
+				declarator();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(879); declarationSpecifiers2();
+				setState(879);
+				declarationSpecifiers2();
 				setState(881);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,82,_ctx) ) {
 				case 1:
 					{
-					setState(880); abstractDeclarator();
+					setState(880);
+					abstractDeclarator();
 					}
 					break;
 				}
@@ -4841,7 +5325,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(886); match(Identifier);
+			setState(886);
+			match(Identifier);
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(893);
@@ -4857,8 +5342,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_identifierList);
 					setState(888);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(889); match(Comma);
-					setState(890); match(Identifier);
+					setState(889);
+					match(Comma);
+					setState(890);
+					match(Identifier);
 					}
 					} 
 				}
@@ -4880,11 +5367,11 @@ public class CParser extends Parser {
 	}
 
 	public static class TypeNameContext extends ParserRuleContext {
-		public AbstractDeclaratorContext abstractDeclarator() {
-			return getRuleContext(AbstractDeclaratorContext.class,0);
-		}
 		public SpecifierQualifierListContext specifierQualifierList() {
 			return getRuleContext(SpecifierQualifierListContext.class,0);
+		}
+		public AbstractDeclaratorContext abstractDeclarator() {
+			return getRuleContext(AbstractDeclaratorContext.class,0);
 		}
 		public TypeNameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4907,12 +5394,15 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(896); specifierQualifierList();
+			setState(896);
+			specifierQualifierList();
 			setState(898);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (((((_la - 59)) & ~0x3f) == 0 && ((1L << (_la - 59)) & ((1L << (LeftParen - 59)) | (1L << (LeftBracket - 59)) | (1L << (Star - 59)) | (1L << (Caret - 59)))) != 0)) {
 				{
-				setState(897); abstractDeclarator();
+				setState(897);
+				abstractDeclarator();
 				}
 			}
 
@@ -4930,14 +5420,14 @@ public class CParser extends Parser {
 	}
 
 	public static class AbstractDeclaratorContext extends ParserRuleContext {
-		public List<GccDeclaratorExtensionContext> gccDeclaratorExtension() {
-			return getRuleContexts(GccDeclaratorExtensionContext.class);
-		}
 		public PointerContext pointer() {
 			return getRuleContext(PointerContext.class,0);
 		}
 		public DirectAbstractDeclaratorContext directAbstractDeclarator() {
 			return getRuleContext(DirectAbstractDeclaratorContext.class,0);
+		}
+		public List<GccDeclaratorExtensionContext> gccDeclaratorExtension() {
+			return getRuleContexts(GccDeclaratorExtensionContext.class);
 		}
 		public GccDeclaratorExtensionContext gccDeclaratorExtension(int i) {
 			return getRuleContext(GccDeclaratorExtensionContext.class,i);
@@ -4963,25 +5453,30 @@ public class CParser extends Parser {
 		try {
 			int _alt;
 			setState(911);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,88,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(900); pointer();
+				setState(900);
+				pointer();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(902);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==Star || _la==Caret) {
 					{
-					setState(901); pointer();
+					setState(901);
+					pointer();
 					}
 				}
 
-				setState(904); directAbstractDeclarator(0);
+				setState(904);
+				directAbstractDeclarator(0);
 				setState(908);
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,87,_ctx);
@@ -4989,7 +5484,8 @@ public class CParser extends Parser {
 					if ( _alt==1 ) {
 						{
 						{
-						setState(905); gccDeclaratorExtension();
+						setState(905);
+						gccDeclaratorExtension();
 						}
 						} 
 					}
@@ -5013,26 +5509,26 @@ public class CParser extends Parser {
 	}
 
 	public static class DirectAbstractDeclaratorContext extends ParserRuleContext {
-		public TypeQualifierListContext typeQualifierList() {
-			return getRuleContext(TypeQualifierListContext.class,0);
-		}
 		public AbstractDeclaratorContext abstractDeclarator() {
 			return getRuleContext(AbstractDeclaratorContext.class,0);
 		}
 		public List<GccDeclaratorExtensionContext> gccDeclaratorExtension() {
 			return getRuleContexts(GccDeclaratorExtensionContext.class);
 		}
-		public DirectAbstractDeclaratorContext directAbstractDeclarator() {
-			return getRuleContext(DirectAbstractDeclaratorContext.class,0);
-		}
 		public GccDeclaratorExtensionContext gccDeclaratorExtension(int i) {
 			return getRuleContext(GccDeclaratorExtensionContext.class,i);
+		}
+		public TypeQualifierListContext typeQualifierList() {
+			return getRuleContext(TypeQualifierListContext.class,0);
 		}
 		public AssignmentExpressionContext assignmentExpression() {
 			return getRuleContext(AssignmentExpressionContext.class,0);
 		}
 		public ParameterTypeListContext parameterTypeList() {
 			return getRuleContext(ParameterTypeListContext.class,0);
+		}
+		public DirectAbstractDeclaratorContext directAbstractDeclarator() {
+			return getRuleContext(DirectAbstractDeclaratorContext.class,0);
 		}
 		public DirectAbstractDeclaratorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5065,12 +5561,16 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(959);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,95,_ctx) ) {
 			case 1:
 				{
-				setState(914); match(LeftParen);
-				setState(915); abstractDeclarator();
-				setState(916); match(RightParen);
+				setState(914);
+				match(LeftParen);
+				setState(915);
+				abstractDeclarator();
+				setState(916);
+				match(RightParen);
 				setState(920);
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,89,_ctx);
@@ -5078,7 +5578,8 @@ public class CParser extends Parser {
 					if ( _alt==1 ) {
 						{
 						{
-						setState(917); gccDeclaratorExtension();
+						setState(917);
+						gccDeclaratorExtension();
 						}
 						} 
 					}
@@ -5090,70 +5591,94 @@ public class CParser extends Parser {
 				break;
 			case 2:
 				{
-				setState(923); match(LeftBracket);
+				setState(923);
+				match(LeftBracket);
 				setState(925);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Const) | (1L << Restrict) | (1L << Volatile) | (1L << Atomic))) != 0)) {
 					{
-					setState(924); typeQualifierList(0);
+					setState(924);
+					typeQualifierList(0);
 					}
 				}
 
 				setState(928);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 					{
-					setState(927); assignmentExpression();
+					setState(927);
+					assignmentExpression();
 					}
 				}
 
-				setState(930); match(RightBracket);
+				setState(930);
+				match(RightBracket);
 				}
 				break;
 			case 3:
 				{
-				setState(931); match(LeftBracket);
-				setState(932); match(Static);
+				setState(931);
+				match(LeftBracket);
+				setState(932);
+				match(Static);
 				setState(934);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Const) | (1L << Restrict) | (1L << Volatile) | (1L << Atomic))) != 0)) {
 					{
-					setState(933); typeQualifierList(0);
+					setState(933);
+					typeQualifierList(0);
 					}
 				}
 
-				setState(936); assignmentExpression();
-				setState(937); match(RightBracket);
+				setState(936);
+				assignmentExpression();
+				setState(937);
+				match(RightBracket);
 				}
 				break;
 			case 4:
 				{
-				setState(939); match(LeftBracket);
-				setState(940); typeQualifierList(0);
-				setState(941); match(Static);
-				setState(942); assignmentExpression();
-				setState(943); match(RightBracket);
+				setState(939);
+				match(LeftBracket);
+				setState(940);
+				typeQualifierList(0);
+				setState(941);
+				match(Static);
+				setState(942);
+				assignmentExpression();
+				setState(943);
+				match(RightBracket);
 				}
 				break;
 			case 5:
 				{
-				setState(945); match(LeftBracket);
-				setState(946); match(Star);
-				setState(947); match(RightBracket);
+				setState(945);
+				match(LeftBracket);
+				setState(946);
+				match(Star);
+				setState(947);
+				match(RightBracket);
 				}
 				break;
 			case 6:
 				{
-				setState(948); match(LeftParen);
+				setState(948);
+				match(LeftParen);
 				setState(950);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__11) | (1L << T__9) | (1L << T__7) | (1L << T__5) | (1L << T__4) | (1L << T__3) | (1L << T__2) | (1L << T__1) | (1L << Auto) | (1L << Char) | (1L << Const) | (1L << Double) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Short) | (1L << Signed) | (1L << Static) | (1L << Struct) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << Alignas) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Noreturn) | (1L << ThreadLocal))) != 0) || _la==Identifier) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__3) | (1L << T__4) | (1L << T__5) | (1L << T__6) | (1L << T__7) | (1L << T__8) | (1L << T__9) | (1L << T__11) | (1L << Auto) | (1L << Char) | (1L << Const) | (1L << Double) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Short) | (1L << Signed) | (1L << Static) | (1L << Struct) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << Alignas) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Noreturn) | (1L << ThreadLocal))) != 0) || _la==Identifier) {
 					{
-					setState(949); parameterTypeList();
+					setState(949);
+					parameterTypeList();
 					}
 				}
 
-				setState(952); match(RightParen);
+				setState(952);
+				match(RightParen);
 				setState(956);
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,94,_ctx);
@@ -5161,7 +5686,8 @@ public class CParser extends Parser {
 					if ( _alt==1 ) {
 						{
 						{
-						setState(953); gccDeclaratorExtension();
+						setState(953);
+						gccDeclaratorExtension();
 						}
 						} 
 					}
@@ -5182,6 +5708,7 @@ public class CParser extends Parser {
 					_prevctx = _localctx;
 					{
 					setState(1002);
+					_errHandler.sync(this);
 					switch ( getInterpreter().adaptivePredict(_input,101,_ctx) ) {
 					case 1:
 						{
@@ -5189,24 +5716,30 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directAbstractDeclarator);
 						setState(961);
 						if (!(precpred(_ctx, 5))) throw new FailedPredicateException(this, "precpred(_ctx, 5)");
-						setState(962); match(LeftBracket);
+						setState(962);
+						match(LeftBracket);
 						setState(964);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
 						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Const) | (1L << Restrict) | (1L << Volatile) | (1L << Atomic))) != 0)) {
 							{
-							setState(963); typeQualifierList(0);
+							setState(963);
+							typeQualifierList(0);
 							}
 						}
 
 						setState(967);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
-						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 							{
-							setState(966); assignmentExpression();
+							setState(966);
+							assignmentExpression();
 							}
 						}
 
-						setState(969); match(RightBracket);
+						setState(969);
+						match(RightBracket);
 						}
 						break;
 					case 2:
@@ -5215,18 +5748,24 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directAbstractDeclarator);
 						setState(970);
 						if (!(precpred(_ctx, 4))) throw new FailedPredicateException(this, "precpred(_ctx, 4)");
-						setState(971); match(LeftBracket);
-						setState(972); match(Static);
+						setState(971);
+						match(LeftBracket);
+						setState(972);
+						match(Static);
 						setState(974);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
 						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Const) | (1L << Restrict) | (1L << Volatile) | (1L << Atomic))) != 0)) {
 							{
-							setState(973); typeQualifierList(0);
+							setState(973);
+							typeQualifierList(0);
 							}
 						}
 
-						setState(976); assignmentExpression();
-						setState(977); match(RightBracket);
+						setState(976);
+						assignmentExpression();
+						setState(977);
+						match(RightBracket);
 						}
 						break;
 					case 3:
@@ -5235,11 +5774,16 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directAbstractDeclarator);
 						setState(979);
 						if (!(precpred(_ctx, 3))) throw new FailedPredicateException(this, "precpred(_ctx, 3)");
-						setState(980); match(LeftBracket);
-						setState(981); typeQualifierList(0);
-						setState(982); match(Static);
-						setState(983); assignmentExpression();
-						setState(984); match(RightBracket);
+						setState(980);
+						match(LeftBracket);
+						setState(981);
+						typeQualifierList(0);
+						setState(982);
+						match(Static);
+						setState(983);
+						assignmentExpression();
+						setState(984);
+						match(RightBracket);
 						}
 						break;
 					case 4:
@@ -5248,9 +5792,12 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directAbstractDeclarator);
 						setState(986);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
-						setState(987); match(LeftBracket);
-						setState(988); match(Star);
-						setState(989); match(RightBracket);
+						setState(987);
+						match(LeftBracket);
+						setState(988);
+						match(Star);
+						setState(989);
+						match(RightBracket);
 						}
 						break;
 					case 5:
@@ -5259,16 +5806,20 @@ public class CParser extends Parser {
 						pushNewRecursionContext(_localctx, _startState, RULE_directAbstractDeclarator);
 						setState(990);
 						if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-						setState(991); match(LeftParen);
+						setState(991);
+						match(LeftParen);
 						setState(993);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
-						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__11) | (1L << T__9) | (1L << T__7) | (1L << T__5) | (1L << T__4) | (1L << T__3) | (1L << T__2) | (1L << T__1) | (1L << Auto) | (1L << Char) | (1L << Const) | (1L << Double) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Short) | (1L << Signed) | (1L << Static) | (1L << Struct) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << Alignas) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Noreturn) | (1L << ThreadLocal))) != 0) || _la==Identifier) {
+						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__3) | (1L << T__4) | (1L << T__5) | (1L << T__6) | (1L << T__7) | (1L << T__8) | (1L << T__9) | (1L << T__11) | (1L << Auto) | (1L << Char) | (1L << Const) | (1L << Double) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Short) | (1L << Signed) | (1L << Static) | (1L << Struct) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << Alignas) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Noreturn) | (1L << ThreadLocal))) != 0) || _la==Identifier) {
 							{
-							setState(992); parameterTypeList();
+							setState(992);
+							parameterTypeList();
 							}
 						}
 
-						setState(995); match(RightParen);
+						setState(995);
+						match(RightParen);
 						setState(999);
 						_errHandler.sync(this);
 						_alt = getInterpreter().adaptivePredict(_input,100,_ctx);
@@ -5276,7 +5827,8 @@ public class CParser extends Parser {
 							if ( _alt==1 ) {
 								{
 								{
-								setState(996); gccDeclaratorExtension();
+								setState(996);
+								gccDeclaratorExtension();
 								}
 								} 
 							}
@@ -5328,7 +5880,8 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1007); match(Identifier);
+			setState(1007);
+			match(Identifier);
 			}
 		}
 		catch (RecognitionException re) {
@@ -5368,28 +5921,37 @@ public class CParser extends Parser {
 		enterRule(_localctx, 128, RULE_initializer);
 		try {
 			setState(1019);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,103,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1009); assignmentExpression();
+				setState(1009);
+				assignmentExpression();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1010); match(LeftBrace);
-				setState(1011); initializerList(0);
-				setState(1012); match(RightBrace);
+				setState(1010);
+				match(LeftBrace);
+				setState(1011);
+				initializerList(0);
+				setState(1012);
+				match(RightBrace);
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1014); match(LeftBrace);
-				setState(1015); initializerList(0);
-				setState(1016); match(Comma);
-				setState(1017); match(RightBrace);
+				setState(1014);
+				match(LeftBrace);
+				setState(1015);
+				initializerList(0);
+				setState(1016);
+				match(Comma);
+				setState(1017);
+				match(RightBrace);
 				}
 				break;
 			}
@@ -5406,14 +5968,14 @@ public class CParser extends Parser {
 	}
 
 	public static class InitializerListContext extends ParserRuleContext {
+		public InitializerContext initializer() {
+			return getRuleContext(InitializerContext.class,0);
+		}
 		public DesignationContext designation() {
 			return getRuleContext(DesignationContext.class,0);
 		}
 		public InitializerListContext initializerList() {
 			return getRuleContext(InitializerListContext.class,0);
-		}
-		public InitializerContext initializer() {
-			return getRuleContext(InitializerContext.class,0);
 		}
 		public InitializerListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5447,14 +6009,17 @@ public class CParser extends Parser {
 			{
 			{
 			setState(1023);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==LeftBracket || _la==Dot) {
 				{
-				setState(1022); designation();
+				setState(1022);
+				designation();
 				}
 			}
 
-			setState(1025); initializer();
+			setState(1025);
+			initializer();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(1035);
@@ -5470,16 +6035,20 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_initializerList);
 					setState(1027);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(1028); match(Comma);
+					setState(1028);
+					match(Comma);
 					setState(1030);
+					_errHandler.sync(this);
 					_la = _input.LA(1);
 					if (_la==LeftBracket || _la==Dot) {
 						{
-						setState(1029); designation();
+						setState(1029);
+						designation();
 						}
 					}
 
-					setState(1032); initializer();
+					setState(1032);
+					initializer();
 					}
 					} 
 				}
@@ -5524,8 +6093,10 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1038); designatorList(0);
-			setState(1039); match(Assign);
+			setState(1038);
+			designatorList(0);
+			setState(1039);
+			match(Assign);
 			}
 		}
 		catch (RecognitionException re) {
@@ -5540,11 +6111,11 @@ public class CParser extends Parser {
 	}
 
 	public static class DesignatorListContext extends ParserRuleContext {
-		public DesignatorListContext designatorList() {
-			return getRuleContext(DesignatorListContext.class,0);
-		}
 		public DesignatorContext designator() {
 			return getRuleContext(DesignatorContext.class,0);
+		}
+		public DesignatorListContext designatorList() {
+			return getRuleContext(DesignatorListContext.class,0);
 		}
 		public DesignatorListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5576,7 +6147,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1042); designator();
+			setState(1042);
+			designator();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(1048);
@@ -5592,7 +6164,8 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_designatorList);
 					setState(1044);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(1045); designator();
+					setState(1045);
+					designator();
 					}
 					} 
 				}
@@ -5614,10 +6187,10 @@ public class CParser extends Parser {
 	}
 
 	public static class DesignatorContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
 		public ConstantExpressionContext constantExpression() {
 			return getRuleContext(ConstantExpressionContext.class,0);
 		}
+		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
 		public DesignatorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -5637,20 +6210,26 @@ public class CParser extends Parser {
 		enterRule(_localctx, 136, RULE_designator);
 		try {
 			setState(1057);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case LeftBracket:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1051); match(LeftBracket);
-				setState(1052); constantExpression();
-				setState(1053); match(RightBracket);
+				setState(1051);
+				match(LeftBracket);
+				setState(1052);
+				constantExpression();
+				setState(1053);
+				match(RightBracket);
 				}
 				break;
 			case Dot:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1055); match(Dot);
-				setState(1056); match(Identifier);
+				setState(1055);
+				match(Dot);
+				setState(1056);
+				match(Identifier);
 				}
 				break;
 			default:
@@ -5669,10 +6248,10 @@ public class CParser extends Parser {
 	}
 
 	public static class StaticAssertDeclarationContext extends ParserRuleContext {
-		public List<TerminalNode> StringLiteral() { return getTokens(CParser.StringLiteral); }
 		public ConstantExpressionContext constantExpression() {
 			return getRuleContext(ConstantExpressionContext.class,0);
 		}
+		public List<TerminalNode> StringLiteral() { return getTokens(CParser.StringLiteral); }
 		public TerminalNode StringLiteral(int i) {
 			return getToken(CParser.StringLiteral, i);
 		}
@@ -5697,25 +6276,32 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1059); match(StaticAssert);
-			setState(1060); match(LeftParen);
-			setState(1061); constantExpression();
-			setState(1062); match(Comma);
+			setState(1059);
+			match(StaticAssert);
+			setState(1060);
+			match(LeftParen);
+			setState(1061);
+			constantExpression();
+			setState(1062);
+			match(Comma);
 			setState(1064); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(1063); match(StringLiteral);
+				setState(1063);
+				match(StringLiteral);
 				}
 				}
 				setState(1066); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( _la==StringLiteral );
-			setState(1068); match(RightParen);
-			setState(1069); match(Semi);
+			setState(1068);
+			match(RightParen);
+			setState(1069);
+			match(Semi);
 			}
 		}
 		catch (RecognitionException re) {
@@ -5733,17 +6319,11 @@ public class CParser extends Parser {
 		public LabeledStatementContext labeledStatement() {
 			return getRuleContext(LabeledStatementContext.class,0);
 		}
+		public CompoundStatementContext compoundStatement() {
+			return getRuleContext(CompoundStatementContext.class,0);
+		}
 		public ExpressionStatementContext expressionStatement() {
 			return getRuleContext(ExpressionStatementContext.class,0);
-		}
-		public JumpStatementContext jumpStatement() {
-			return getRuleContext(JumpStatementContext.class,0);
-		}
-		public LogicalOrExpressionContext logicalOrExpression(int i) {
-			return getRuleContext(LogicalOrExpressionContext.class,i);
-		}
-		public List<LogicalOrExpressionContext> logicalOrExpression() {
-			return getRuleContexts(LogicalOrExpressionContext.class);
 		}
 		public SelectionStatementContext selectionStatement() {
 			return getRuleContext(SelectionStatementContext.class,0);
@@ -5751,8 +6331,14 @@ public class CParser extends Parser {
 		public IterationStatementContext iterationStatement() {
 			return getRuleContext(IterationStatementContext.class,0);
 		}
-		public CompoundStatementContext compoundStatement() {
-			return getRuleContext(CompoundStatementContext.class,0);
+		public JumpStatementContext jumpStatement() {
+			return getRuleContext(JumpStatementContext.class,0);
+		}
+		public List<LogicalOrExpressionContext> logicalOrExpression() {
+			return getRuleContexts(LogicalOrExpressionContext.class);
+		}
+		public LogicalOrExpressionContext logicalOrExpression(int i) {
+			return getRuleContext(LogicalOrExpressionContext.class,i);
 		}
 		public StatementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5774,41 +6360,48 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(1108);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,115,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1071); labeledStatement();
+				setState(1071);
+				labeledStatement();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1072); compoundStatement();
+				setState(1072);
+				compoundStatement();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1073); expressionStatement();
+				setState(1073);
+				expressionStatement();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(1074); selectionStatement();
+				setState(1074);
+				selectionStatement();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(1075); iterationStatement();
+				setState(1075);
+				iterationStatement();
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(1076); jumpStatement();
+				setState(1076);
+				jumpStatement();
 				}
 				break;
 			case 7:
@@ -5816,30 +6409,43 @@ public class CParser extends Parser {
 				{
 				setState(1077);
 				_la = _input.LA(1);
-				if ( !(_la==T__10 || _la==T__6) ) {
+				if ( !(_la==T__10 || _la==T__12) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				setState(1078);
 				_la = _input.LA(1);
-				if ( !(_la==T__12 || _la==Volatile) ) {
+				if ( !(_la==T__13 || _la==Volatile) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1079); match(LeftParen);
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1079);
+				match(LeftParen);
 				setState(1088);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 					{
-					setState(1080); logicalOrExpression(0);
+					setState(1080);
+					logicalOrExpression(0);
 					setState(1085);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 					while (_la==Comma) {
 						{
 						{
-						setState(1081); match(Comma);
-						setState(1082); logicalOrExpression(0);
+						setState(1081);
+						match(Comma);
+						setState(1082);
+						logicalOrExpression(0);
 						}
 						}
 						setState(1087);
@@ -5855,20 +6461,25 @@ public class CParser extends Parser {
 				while (_la==Colon) {
 					{
 					{
-					setState(1090); match(Colon);
+					setState(1090);
+					match(Colon);
 					setState(1099);
+					_errHandler.sync(this);
 					_la = _input.LA(1);
-					if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+					if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 						{
-						setState(1091); logicalOrExpression(0);
+						setState(1091);
+						logicalOrExpression(0);
 						setState(1096);
 						_errHandler.sync(this);
 						_la = _input.LA(1);
 						while (_la==Comma) {
 							{
 							{
-							setState(1092); match(Comma);
-							setState(1093); logicalOrExpression(0);
+							setState(1092);
+							match(Comma);
+							setState(1093);
+							logicalOrExpression(0);
 							}
 							}
 							setState(1098);
@@ -5884,8 +6495,10 @@ public class CParser extends Parser {
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				}
-				setState(1106); match(RightParen);
-				setState(1107); match(Semi);
+				setState(1106);
+				match(RightParen);
+				setState(1107);
+				match(Semi);
 				}
 				break;
 			}
@@ -5928,30 +6541,41 @@ public class CParser extends Parser {
 		enterRule(_localctx, 142, RULE_labeledStatement);
 		try {
 			setState(1121);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case Identifier:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1110); match(Identifier);
-				setState(1111); match(Colon);
-				setState(1112); statement();
+				setState(1110);
+				match(Identifier);
+				setState(1111);
+				match(Colon);
+				setState(1112);
+				statement();
 				}
 				break;
 			case Case:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1113); match(Case);
-				setState(1114); constantExpression();
-				setState(1115); match(Colon);
-				setState(1116); statement();
+				setState(1113);
+				match(Case);
+				setState(1114);
+				constantExpression();
+				setState(1115);
+				match(Colon);
+				setState(1116);
+				statement();
 				}
 				break;
 			case Default:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1118); match(Default);
-				setState(1119); match(Colon);
-				setState(1120); statement();
+				setState(1118);
+				match(Default);
+				setState(1119);
+				match(Colon);
+				setState(1120);
+				statement();
 				}
 				break;
 			default:
@@ -5994,16 +6618,20 @@ public class CParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1123); match(LeftBrace);
+			setState(1123);
+			match(LeftBrace);
 			setState(1125);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__11) | (1L << T__10) | (1L << T__9) | (1L << T__8) | (1L << T__7) | (1L << T__6) | (1L << T__5) | (1L << T__4) | (1L << T__3) | (1L << T__2) | (1L << T__1) | (1L << T__0) | (1L << Auto) | (1L << Break) | (1L << Case) | (1L << Char) | (1L << Const) | (1L << Continue) | (1L << Default) | (1L << Do) | (1L << Double) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << For) | (1L << Goto) | (1L << If) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Return) | (1L << Short) | (1L << Signed) | (1L << Sizeof) | (1L << Static) | (1L << Struct) | (1L << Switch) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << While) | (1L << Alignas) | (1L << Alignof) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Generic) | (1L << Noreturn) | (1L << StaticAssert) | (1L << ThreadLocal) | (1L << LeftParen) | (1L << LeftBrace))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Semi - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << T__3) | (1L << T__4) | (1L << T__5) | (1L << T__6) | (1L << T__7) | (1L << T__8) | (1L << T__9) | (1L << T__10) | (1L << T__11) | (1L << T__12) | (1L << Auto) | (1L << Break) | (1L << Case) | (1L << Char) | (1L << Const) | (1L << Continue) | (1L << Default) | (1L << Do) | (1L << Double) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << For) | (1L << Goto) | (1L << If) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Return) | (1L << Short) | (1L << Signed) | (1L << Sizeof) | (1L << Static) | (1L << Struct) | (1L << Switch) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << While) | (1L << Alignas) | (1L << Alignof) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Generic) | (1L << Noreturn) | (1L << StaticAssert) | (1L << ThreadLocal) | (1L << LeftParen) | (1L << LeftBrace))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Semi - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 				{
-				setState(1124); blockItemList(0);
+				setState(1124);
+				blockItemList(0);
 				}
 			}
 
-			setState(1127); match(RightBrace);
+			setState(1127);
+			match(RightBrace);
 			}
 		}
 		catch (RecognitionException re) {
@@ -6054,7 +6682,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1130); blockItem();
+			setState(1130);
+			blockItem();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(1136);
@@ -6070,7 +6699,8 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_blockItemList);
 					setState(1132);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(1133); blockItem();
+					setState(1133);
+					blockItem();
 					}
 					} 
 				}
@@ -6117,17 +6747,20 @@ public class CParser extends Parser {
 		enterRule(_localctx, 148, RULE_blockItem);
 		try {
 			setState(1141);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,119,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1139); declaration();
+				setState(1139);
+				declaration();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1140); statement();
+				setState(1140);
+				statement();
 				}
 				break;
 			}
@@ -6169,14 +6802,17 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(1144);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 				{
-				setState(1143); expression(0);
+				setState(1143);
+				expression(0);
 				}
 			}
 
-			setState(1146); match(Semi);
+			setState(1146);
+			match(Semi);
 			}
 		}
 		catch (RecognitionException re) {
@@ -6191,14 +6827,14 @@ public class CParser extends Parser {
 	}
 
 	public static class SelectionStatementContext extends ParserRuleContext {
-		public StatementContext statement(int i) {
-			return getRuleContext(StatementContext.class,i);
+		public ExpressionContext expression() {
+			return getRuleContext(ExpressionContext.class,0);
 		}
 		public List<StatementContext> statement() {
 			return getRuleContexts(StatementContext.class);
 		}
-		public ExpressionContext expression() {
-			return getRuleContext(ExpressionContext.class,0);
+		public StatementContext statement(int i) {
+			return getRuleContext(StatementContext.class,i);
 		}
 		public SelectionStatementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6219,21 +6855,30 @@ public class CParser extends Parser {
 		enterRule(_localctx, 152, RULE_selectionStatement);
 		try {
 			setState(1163);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case If:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1148); match(If);
-				setState(1149); match(LeftParen);
-				setState(1150); expression(0);
-				setState(1151); match(RightParen);
-				setState(1152); statement();
+				setState(1148);
+				match(If);
+				setState(1149);
+				match(LeftParen);
+				setState(1150);
+				expression(0);
+				setState(1151);
+				match(RightParen);
+				setState(1152);
+				statement();
 				setState(1155);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,121,_ctx) ) {
 				case 1:
 					{
-					setState(1153); match(Else);
-					setState(1154); statement();
+					setState(1153);
+					match(Else);
+					setState(1154);
+					statement();
 					}
 					break;
 				}
@@ -6242,11 +6887,16 @@ public class CParser extends Parser {
 			case Switch:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1157); match(Switch);
-				setState(1158); match(LeftParen);
-				setState(1159); expression(0);
-				setState(1160); match(RightParen);
-				setState(1161); statement();
+				setState(1157);
+				match(Switch);
+				setState(1158);
+				match(LeftParen);
+				setState(1159);
+				expression(0);
+				setState(1160);
+				match(RightParen);
+				setState(1161);
+				statement();
 				}
 				break;
 			default:
@@ -6266,16 +6916,16 @@ public class CParser extends Parser {
 
 	public static class IterationStatementContext extends ParserRuleContext {
 		public TerminalNode While() { return getToken(CParser.While, 0); }
-		public ForConditionContext forCondition() {
-			return getRuleContext(ForConditionContext.class,0);
+		public ExpressionContext expression() {
+			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode Do() { return getToken(CParser.Do, 0); }
-		public TerminalNode For() { return getToken(CParser.For, 0); }
 		public StatementContext statement() {
 			return getRuleContext(StatementContext.class,0);
 		}
-		public ExpressionContext expression() {
-			return getRuleContext(ExpressionContext.class,0);
+		public TerminalNode Do() { return getToken(CParser.Do, 0); }
+		public TerminalNode For() { return getToken(CParser.For, 0); }
+		public ForConditionContext forCondition() {
+			return getRuleContext(ForConditionContext.class,0);
 		}
 		public IterationStatementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6296,37 +6946,55 @@ public class CParser extends Parser {
 		enterRule(_localctx, 154, RULE_iterationStatement);
 		try {
 			setState(1185);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case While:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1165); match(While);
-				setState(1166); match(LeftParen);
-				setState(1167); expression(0);
-				setState(1168); match(RightParen);
-				setState(1169); statement();
+				setState(1165);
+				match(While);
+				setState(1166);
+				match(LeftParen);
+				setState(1167);
+				expression(0);
+				setState(1168);
+				match(RightParen);
+				setState(1169);
+				statement();
 				}
 				break;
 			case Do:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1171); match(Do);
-				setState(1172); statement();
-				setState(1173); match(While);
-				setState(1174); match(LeftParen);
-				setState(1175); expression(0);
-				setState(1176); match(RightParen);
-				setState(1177); match(Semi);
+				setState(1171);
+				match(Do);
+				setState(1172);
+				statement();
+				setState(1173);
+				match(While);
+				setState(1174);
+				match(LeftParen);
+				setState(1175);
+				expression(0);
+				setState(1176);
+				match(RightParen);
+				setState(1177);
+				match(Semi);
 				}
 				break;
 			case For:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1179); match(For);
-				setState(1180); match(LeftParen);
-				setState(1181); forCondition();
-				setState(1182); match(RightParen);
-				setState(1183); statement();
+				setState(1179);
+				match(For);
+				setState(1180);
+				match(LeftParen);
+				setState(1181);
+				forCondition();
+				setState(1182);
+				match(RightParen);
+				setState(1183);
+				statement();
 				}
 				break;
 			default:
@@ -6348,14 +7016,14 @@ public class CParser extends Parser {
 		public ForDeclarationContext forDeclaration() {
 			return getRuleContext(ForDeclarationContext.class,0);
 		}
+		public List<ForExpressionContext> forExpression() {
+			return getRuleContexts(ForExpressionContext.class);
+		}
 		public ForExpressionContext forExpression(int i) {
 			return getRuleContext(ForExpressionContext.class,i);
 		}
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
-		}
-		public List<ForExpressionContext> forExpression() {
-			return getRuleContexts(ForExpressionContext.class);
 		}
 		public ForConditionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6377,26 +7045,34 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(1207);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,129,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1187); forDeclaration();
-				setState(1188); match(Semi);
+				setState(1187);
+				forDeclaration();
+				setState(1188);
+				match(Semi);
 				setState(1190);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 					{
-					setState(1189); forExpression(0);
+					setState(1189);
+					forExpression(0);
 					}
 				}
 
-				setState(1192); match(Semi);
+				setState(1192);
+				match(Semi);
 				setState(1194);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 					{
-					setState(1193); forExpression(0);
+					setState(1193);
+					forExpression(0);
 					}
 				}
 
@@ -6406,28 +7082,36 @@ public class CParser extends Parser {
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(1197);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 					{
-					setState(1196); expression(0);
+					setState(1196);
+					expression(0);
 					}
 				}
 
-				setState(1199); match(Semi);
+				setState(1199);
+				match(Semi);
 				setState(1201);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 					{
-					setState(1200); forExpression(0);
+					setState(1200);
+					forExpression(0);
 					}
 				}
 
-				setState(1203); match(Semi);
+				setState(1203);
+				match(Semi);
 				setState(1205);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 					{
-					setState(1204); forExpression(0);
+					setState(1204);
+					forExpression(0);
 					}
 				}
 
@@ -6447,11 +7131,11 @@ public class CParser extends Parser {
 	}
 
 	public static class ForDeclarationContext extends ParserRuleContext {
-		public InitDeclaratorListContext initDeclaratorList() {
-			return getRuleContext(InitDeclaratorListContext.class,0);
-		}
 		public DeclarationSpecifiersContext declarationSpecifiers() {
 			return getRuleContext(DeclarationSpecifiersContext.class,0);
+		}
+		public InitDeclaratorListContext initDeclaratorList() {
+			return getRuleContext(InitDeclaratorListContext.class,0);
 		}
 		public ForDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6472,18 +7156,22 @@ public class CParser extends Parser {
 		enterRule(_localctx, 158, RULE_forDeclaration);
 		try {
 			setState(1213);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,130,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1209); declarationSpecifiers();
-				setState(1210); initDeclaratorList(0);
+				setState(1209);
+				declarationSpecifiers();
+				setState(1210);
+				initDeclaratorList(0);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1212); declarationSpecifiers();
+				setState(1212);
+				declarationSpecifiers();
 				}
 				break;
 			}
@@ -6536,7 +7224,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1216); assignmentExpression();
+			setState(1216);
+			assignmentExpression();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(1223);
@@ -6552,8 +7241,10 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_forExpression);
 					setState(1218);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(1219); match(Comma);
-					setState(1220); assignmentExpression();
+					setState(1219);
+					match(Comma);
+					setState(1220);
+					assignmentExpression();
 					}
 					} 
 				}
@@ -6576,11 +7267,11 @@ public class CParser extends Parser {
 
 	public static class JumpStatementContext extends ParserRuleContext {
 		public TerminalNode Identifier() { return getToken(CParser.Identifier, 0); }
-		public UnaryExpressionContext unaryExpression() {
-			return getRuleContext(UnaryExpressionContext.class,0);
-		}
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
+		}
+		public UnaryExpressionContext unaryExpression() {
+			return getRuleContext(UnaryExpressionContext.class,0);
 		}
 		public JumpStatementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6602,50 +7293,65 @@ public class CParser extends Parser {
 		int _la;
 		try {
 			setState(1242);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,133,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1226); match(Goto);
-				setState(1227); match(Identifier);
-				setState(1228); match(Semi);
+				setState(1226);
+				match(Goto);
+				setState(1227);
+				match(Identifier);
+				setState(1228);
+				match(Semi);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1229); match(Continue);
-				setState(1230); match(Semi);
+				setState(1229);
+				match(Continue);
+				setState(1230);
+				match(Semi);
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1231); match(Break);
-				setState(1232); match(Semi);
+				setState(1231);
+				match(Break);
+				setState(1232);
+				match(Semi);
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(1233); match(Return);
+				setState(1233);
+				match(Return);
 				setState(1235);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__8) | (1L << T__0) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << Sizeof) | (1L << Alignof) | (1L << Generic) | (1L << LeftParen))) != 0) || ((((_la - 71)) & ~0x3f) == 0 && ((1L << (_la - 71)) & ((1L << (Plus - 71)) | (1L << (PlusPlus - 71)) | (1L << (Minus - 71)) | (1L << (MinusMinus - 71)) | (1L << (Star - 71)) | (1L << (And - 71)) | (1L << (AndAnd - 71)) | (1L << (Not - 71)) | (1L << (Tilde - 71)) | (1L << (Identifier - 71)) | (1L << (Constant - 71)) | (1L << (DigitSequence - 71)) | (1L << (StringLiteral - 71)))) != 0)) {
 					{
-					setState(1234); expression(0);
+					setState(1234);
+					expression(0);
 					}
 				}
 
-				setState(1237); match(Semi);
+				setState(1237);
+				match(Semi);
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(1238); match(Goto);
-				setState(1239); unaryExpression();
-				setState(1240); match(Semi);
+				setState(1238);
+				match(Goto);
+				setState(1239);
+				unaryExpression();
+				setState(1240);
+				match(Semi);
 				}
 				break;
 			}
@@ -6662,10 +7368,10 @@ public class CParser extends Parser {
 	}
 
 	public static class CompilationUnitContext extends ParserRuleContext {
+		public TerminalNode EOF() { return getToken(CParser.EOF, 0); }
 		public TranslationUnitContext translationUnit() {
 			return getRuleContext(TranslationUnitContext.class,0);
 		}
-		public TerminalNode EOF() { return getToken(CParser.EOF, 0); }
 		public CompilationUnitContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -6688,14 +7394,17 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(1245);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__11) | (1L << T__9) | (1L << T__7) | (1L << T__5) | (1L << T__4) | (1L << T__3) | (1L << T__2) | (1L << T__1) | (1L << Auto) | (1L << Char) | (1L << Const) | (1L << Double) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Short) | (1L << Signed) | (1L << Static) | (1L << Struct) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << Alignas) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Noreturn) | (1L << StaticAssert) | (1L << ThreadLocal) | (1L << LeftParen))) != 0) || ((((_la - 75)) & ~0x3f) == 0 && ((1L << (_la - 75)) & ((1L << (Star - 75)) | (1L << (Caret - 75)) | (1L << (Semi - 75)) | (1L << (Identifier - 75)))) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__3) | (1L << T__4) | (1L << T__5) | (1L << T__6) | (1L << T__7) | (1L << T__8) | (1L << T__9) | (1L << T__11) | (1L << Auto) | (1L << Char) | (1L << Const) | (1L << Double) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Short) | (1L << Signed) | (1L << Static) | (1L << Struct) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << Alignas) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Noreturn) | (1L << StaticAssert) | (1L << ThreadLocal) | (1L << LeftParen))) != 0) || ((((_la - 75)) & ~0x3f) == 0 && ((1L << (_la - 75)) & ((1L << (Star - 75)) | (1L << (Caret - 75)) | (1L << (Semi - 75)) | (1L << (Identifier - 75)))) != 0)) {
 				{
-				setState(1244); translationUnit(0);
+				setState(1244);
+				translationUnit(0);
 				}
 			}
 
-			setState(1247); match(EOF);
+			setState(1247);
+			match(EOF);
 			}
 		}
 		catch (RecognitionException re) {
@@ -6710,11 +7419,11 @@ public class CParser extends Parser {
 	}
 
 	public static class TranslationUnitContext extends ParserRuleContext {
-		public TranslationUnitContext translationUnit() {
-			return getRuleContext(TranslationUnitContext.class,0);
-		}
 		public ExternalDeclarationContext externalDeclaration() {
 			return getRuleContext(ExternalDeclarationContext.class,0);
+		}
+		public TranslationUnitContext translationUnit() {
+			return getRuleContext(TranslationUnitContext.class,0);
 		}
 		public TranslationUnitContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6746,7 +7455,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1250); externalDeclaration();
+			setState(1250);
+			externalDeclaration();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(1256);
@@ -6762,7 +7472,8 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_translationUnit);
 					setState(1252);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(1253); externalDeclaration();
+					setState(1253);
+					externalDeclaration();
 					}
 					} 
 				}
@@ -6809,23 +7520,27 @@ public class CParser extends Parser {
 		enterRule(_localctx, 168, RULE_externalDeclaration);
 		try {
 			setState(1262);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,136,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1259); functionDefinition();
+				setState(1259);
+				functionDefinition();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1260); declaration();
+				setState(1260);
+				declaration();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1261); match(Semi);
+				setState(1261);
+				match(Semi);
 				}
 				break;
 			}
@@ -6845,14 +7560,14 @@ public class CParser extends Parser {
 		public DeclaratorContext declarator() {
 			return getRuleContext(DeclaratorContext.class,0);
 		}
-		public DeclarationListContext declarationList() {
-			return getRuleContext(DeclarationListContext.class,0);
+		public CompoundStatementContext compoundStatement() {
+			return getRuleContext(CompoundStatementContext.class,0);
 		}
 		public DeclarationSpecifiersContext declarationSpecifiers() {
 			return getRuleContext(DeclarationSpecifiersContext.class,0);
 		}
-		public CompoundStatementContext compoundStatement() {
-			return getRuleContext(CompoundStatementContext.class,0);
+		public DeclarationListContext declarationList() {
+			return getRuleContext(DeclarationListContext.class,0);
 		}
 		public FunctionDefinitionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6876,23 +7591,29 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(1265);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,137,_ctx) ) {
 			case 1:
 				{
-				setState(1264); declarationSpecifiers();
+				setState(1264);
+				declarationSpecifiers();
 				}
 				break;
 			}
-			setState(1267); declarator();
+			setState(1267);
+			declarator();
 			setState(1269);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__11) | (1L << T__9) | (1L << T__7) | (1L << T__5) | (1L << T__4) | (1L << T__3) | (1L << T__2) | (1L << T__1) | (1L << Auto) | (1L << Char) | (1L << Const) | (1L << Double) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Short) | (1L << Signed) | (1L << Static) | (1L << Struct) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << Alignas) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Noreturn) | (1L << StaticAssert) | (1L << ThreadLocal))) != 0) || _la==Identifier) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__3) | (1L << T__4) | (1L << T__5) | (1L << T__6) | (1L << T__7) | (1L << T__8) | (1L << T__9) | (1L << T__11) | (1L << Auto) | (1L << Char) | (1L << Const) | (1L << Double) | (1L << Enum) | (1L << Extern) | (1L << Float) | (1L << Inline) | (1L << Int) | (1L << Long) | (1L << Register) | (1L << Restrict) | (1L << Short) | (1L << Signed) | (1L << Static) | (1L << Struct) | (1L << Typedef) | (1L << Union) | (1L << Unsigned) | (1L << Void) | (1L << Volatile) | (1L << Alignas) | (1L << Atomic) | (1L << Bool) | (1L << Complex) | (1L << Noreturn) | (1L << StaticAssert) | (1L << ThreadLocal))) != 0) || _la==Identifier) {
 				{
-				setState(1268); declarationList(0);
+				setState(1268);
+				declarationList(0);
 				}
 			}
 
-			setState(1271); compoundStatement();
+			setState(1271);
+			compoundStatement();
 			}
 		}
 		catch (RecognitionException re) {
@@ -6907,11 +7628,11 @@ public class CParser extends Parser {
 	}
 
 	public static class DeclarationListContext extends ParserRuleContext {
-		public DeclarationListContext declarationList() {
-			return getRuleContext(DeclarationListContext.class,0);
-		}
 		public DeclarationContext declaration() {
 			return getRuleContext(DeclarationContext.class,0);
+		}
+		public DeclarationListContext declarationList() {
+			return getRuleContext(DeclarationListContext.class,0);
 		}
 		public DeclarationListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6943,7 +7664,8 @@ public class CParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1274); declaration();
+			setState(1274);
+			declaration();
 			}
 			_ctx.stop = _input.LT(-1);
 			setState(1280);
@@ -6959,7 +7681,8 @@ public class CParser extends Parser {
 					pushNewRecursionContext(_localctx, _startState, RULE_declarationList);
 					setState(1276);
 					if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
-					setState(1277); declaration();
+					setState(1277);
+					declaration();
 					}
 					} 
 				}
@@ -6982,237 +7705,317 @@ public class CParser extends Parser {
 
 	public boolean sempred(RuleContext _localctx, int ruleIndex, int predIndex) {
 		switch (ruleIndex) {
-		case 2: return genericAssocList_sempred((GenericAssocListContext)_localctx, predIndex);
-		case 4: return postfixExpression_sempred((PostfixExpressionContext)_localctx, predIndex);
-		case 5: return argumentExpressionList_sempred((ArgumentExpressionListContext)_localctx, predIndex);
-		case 9: return multiplicativeExpression_sempred((MultiplicativeExpressionContext)_localctx, predIndex);
-		case 10: return additiveExpression_sempred((AdditiveExpressionContext)_localctx, predIndex);
-		case 11: return shiftExpression_sempred((ShiftExpressionContext)_localctx, predIndex);
-		case 12: return relationalExpression_sempred((RelationalExpressionContext)_localctx, predIndex);
-		case 13: return equalityExpression_sempred((EqualityExpressionContext)_localctx, predIndex);
-		case 14: return andExpression_sempred((AndExpressionContext)_localctx, predIndex);
-		case 15: return exclusiveOrExpression_sempred((ExclusiveOrExpressionContext)_localctx, predIndex);
-		case 16: return inclusiveOrExpression_sempred((InclusiveOrExpressionContext)_localctx, predIndex);
-		case 17: return logicalAndExpression_sempred((LogicalAndExpressionContext)_localctx, predIndex);
-		case 18: return logicalOrExpression_sempred((LogicalOrExpressionContext)_localctx, predIndex);
-		case 22: return expression_sempred((ExpressionContext)_localctx, predIndex);
-		case 28: return initDeclaratorList_sempred((InitDeclaratorListContext)_localctx, predIndex);
-		case 34: return structDeclarationList_sempred((StructDeclarationListContext)_localctx, predIndex);
-		case 37: return structDeclaratorList_sempred((StructDeclaratorListContext)_localctx, predIndex);
-		case 40: return enumeratorList_sempred((EnumeratorListContext)_localctx, predIndex);
-		case 48: return directDeclarator_sempred((DirectDeclaratorContext)_localctx, predIndex);
-		case 55: return typeQualifierList_sempred((TypeQualifierListContext)_localctx, predIndex);
-		case 57: return parameterList_sempred((ParameterListContext)_localctx, predIndex);
-		case 59: return identifierList_sempred((IdentifierListContext)_localctx, predIndex);
-		case 62: return directAbstractDeclarator_sempred((DirectAbstractDeclaratorContext)_localctx, predIndex);
-		case 65: return initializerList_sempred((InitializerListContext)_localctx, predIndex);
-		case 67: return designatorList_sempred((DesignatorListContext)_localctx, predIndex);
-		case 73: return blockItemList_sempred((BlockItemListContext)_localctx, predIndex);
-		case 80: return forExpression_sempred((ForExpressionContext)_localctx, predIndex);
-		case 83: return translationUnit_sempred((TranslationUnitContext)_localctx, predIndex);
-		case 86: return declarationList_sempred((DeclarationListContext)_localctx, predIndex);
-		}
-		return true;
-	}
-	private boolean structDeclarationList_sempred(StructDeclarationListContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 28: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean structDeclaratorList_sempred(StructDeclaratorListContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 29: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean additiveExpression_sempred(AdditiveExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 11: return precpred(_ctx, 2);
-		case 12: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean relationalExpression_sempred(RelationalExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 16: return precpred(_ctx, 3);
-		case 17: return precpred(_ctx, 2);
-		case 18: return precpred(_ctx, 1);
-		case 15: return precpred(_ctx, 4);
-		}
-		return true;
-	}
-	private boolean enumeratorList_sempred(EnumeratorListContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 30: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean declarationList_sempred(DeclarationListContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 50: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean directDeclarator_sempred(DirectDeclaratorContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 32: return precpred(_ctx, 6);
-		case 33: return precpred(_ctx, 5);
-		case 34: return precpred(_ctx, 4);
-		case 35: return precpred(_ctx, 3);
-		case 36: return precpred(_ctx, 2);
-		case 31: return precpred(_ctx, 7);
-		}
-		return true;
-	}
-	private boolean designatorList_sempred(DesignatorListContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 46: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean andExpression_sempred(AndExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 21: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean argumentExpressionList_sempred(ArgumentExpressionListContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 7: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean logicalAndExpression_sempred(LogicalAndExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 24: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean postfixExpression_sempred(PostfixExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 1: return precpred(_ctx, 10);
-		case 2: return precpred(_ctx, 9);
-		case 3: return precpred(_ctx, 8);
-		case 4: return precpred(_ctx, 7);
-		case 5: return precpred(_ctx, 6);
-		case 6: return precpred(_ctx, 5);
-		}
-		return true;
-	}
-	private boolean typeQualifierList_sempred(TypeQualifierListContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 37: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean forExpression_sempred(ForExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 48: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean expression_sempred(ExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 26: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean identifierList_sempred(IdentifierListContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 39: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean shiftExpression_sempred(ShiftExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 13: return precpred(_ctx, 2);
-		case 14: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean inclusiveOrExpression_sempred(InclusiveOrExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 23: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean directAbstractDeclarator_sempred(DirectAbstractDeclaratorContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 40: return precpred(_ctx, 5);
-		case 41: return precpred(_ctx, 4);
-		case 42: return precpred(_ctx, 3);
-		case 43: return precpred(_ctx, 2);
-		case 44: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean multiplicativeExpression_sempred(MultiplicativeExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 8: return precpred(_ctx, 3);
-		case 9: return precpred(_ctx, 2);
-		case 10: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean logicalOrExpression_sempred(LogicalOrExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 25: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean translationUnit_sempred(TranslationUnitContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 49: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean blockItemList_sempred(BlockItemListContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 47: return precpred(_ctx, 1);
-		}
-		return true;
-	}
-	private boolean exclusiveOrExpression_sempred(ExclusiveOrExpressionContext _localctx, int predIndex) {
-		switch (predIndex) {
-		case 22: return precpred(_ctx, 1);
+		case 2:
+			return genericAssocList_sempred((GenericAssocListContext)_localctx, predIndex);
+		case 4:
+			return postfixExpression_sempred((PostfixExpressionContext)_localctx, predIndex);
+		case 5:
+			return argumentExpressionList_sempred((ArgumentExpressionListContext)_localctx, predIndex);
+		case 9:
+			return multiplicativeExpression_sempred((MultiplicativeExpressionContext)_localctx, predIndex);
+		case 10:
+			return additiveExpression_sempred((AdditiveExpressionContext)_localctx, predIndex);
+		case 11:
+			return shiftExpression_sempred((ShiftExpressionContext)_localctx, predIndex);
+		case 12:
+			return relationalExpression_sempred((RelationalExpressionContext)_localctx, predIndex);
+		case 13:
+			return equalityExpression_sempred((EqualityExpressionContext)_localctx, predIndex);
+		case 14:
+			return andExpression_sempred((AndExpressionContext)_localctx, predIndex);
+		case 15:
+			return exclusiveOrExpression_sempred((ExclusiveOrExpressionContext)_localctx, predIndex);
+		case 16:
+			return inclusiveOrExpression_sempred((InclusiveOrExpressionContext)_localctx, predIndex);
+		case 17:
+			return logicalAndExpression_sempred((LogicalAndExpressionContext)_localctx, predIndex);
+		case 18:
+			return logicalOrExpression_sempred((LogicalOrExpressionContext)_localctx, predIndex);
+		case 22:
+			return expression_sempred((ExpressionContext)_localctx, predIndex);
+		case 28:
+			return initDeclaratorList_sempred((InitDeclaratorListContext)_localctx, predIndex);
+		case 34:
+			return structDeclarationList_sempred((StructDeclarationListContext)_localctx, predIndex);
+		case 37:
+			return structDeclaratorList_sempred((StructDeclaratorListContext)_localctx, predIndex);
+		case 40:
+			return enumeratorList_sempred((EnumeratorListContext)_localctx, predIndex);
+		case 48:
+			return directDeclarator_sempred((DirectDeclaratorContext)_localctx, predIndex);
+		case 55:
+			return typeQualifierList_sempred((TypeQualifierListContext)_localctx, predIndex);
+		case 57:
+			return parameterList_sempred((ParameterListContext)_localctx, predIndex);
+		case 59:
+			return identifierList_sempred((IdentifierListContext)_localctx, predIndex);
+		case 62:
+			return directAbstractDeclarator_sempred((DirectAbstractDeclaratorContext)_localctx, predIndex);
+		case 65:
+			return initializerList_sempred((InitializerListContext)_localctx, predIndex);
+		case 67:
+			return designatorList_sempred((DesignatorListContext)_localctx, predIndex);
+		case 73:
+			return blockItemList_sempred((BlockItemListContext)_localctx, predIndex);
+		case 80:
+			return forExpression_sempred((ForExpressionContext)_localctx, predIndex);
+		case 83:
+			return translationUnit_sempred((TranslationUnitContext)_localctx, predIndex);
+		case 86:
+			return declarationList_sempred((DeclarationListContext)_localctx, predIndex);
 		}
 		return true;
 	}
 	private boolean genericAssocList_sempred(GenericAssocListContext _localctx, int predIndex) {
 		switch (predIndex) {
-		case 0: return precpred(_ctx, 1);
+		case 0:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean postfixExpression_sempred(PostfixExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 1:
+			return precpred(_ctx, 10);
+		case 2:
+			return precpred(_ctx, 9);
+		case 3:
+			return precpred(_ctx, 8);
+		case 4:
+			return precpred(_ctx, 7);
+		case 5:
+			return precpred(_ctx, 6);
+		case 6:
+			return precpred(_ctx, 5);
+		}
+		return true;
+	}
+	private boolean argumentExpressionList_sempred(ArgumentExpressionListContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 7:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean multiplicativeExpression_sempred(MultiplicativeExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 8:
+			return precpred(_ctx, 3);
+		case 9:
+			return precpred(_ctx, 2);
+		case 10:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean additiveExpression_sempred(AdditiveExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 11:
+			return precpred(_ctx, 2);
+		case 12:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean shiftExpression_sempred(ShiftExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 13:
+			return precpred(_ctx, 2);
+		case 14:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean relationalExpression_sempred(RelationalExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 15:
+			return precpred(_ctx, 4);
+		case 16:
+			return precpred(_ctx, 3);
+		case 17:
+			return precpred(_ctx, 2);
+		case 18:
+			return precpred(_ctx, 1);
 		}
 		return true;
 	}
 	private boolean equalityExpression_sempred(EqualityExpressionContext _localctx, int predIndex) {
 		switch (predIndex) {
-		case 19: return precpred(_ctx, 2);
-		case 20: return precpred(_ctx, 1);
+		case 19:
+			return precpred(_ctx, 2);
+		case 20:
+			return precpred(_ctx, 1);
 		}
 		return true;
 	}
-	private boolean parameterList_sempred(ParameterListContext _localctx, int predIndex) {
+	private boolean andExpression_sempred(AndExpressionContext _localctx, int predIndex) {
 		switch (predIndex) {
-		case 38: return precpred(_ctx, 1);
+		case 21:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean exclusiveOrExpression_sempred(ExclusiveOrExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 22:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean inclusiveOrExpression_sempred(InclusiveOrExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 23:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean logicalAndExpression_sempred(LogicalAndExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 24:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean logicalOrExpression_sempred(LogicalOrExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 25:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean expression_sempred(ExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 26:
+			return precpred(_ctx, 1);
 		}
 		return true;
 	}
 	private boolean initDeclaratorList_sempred(InitDeclaratorListContext _localctx, int predIndex) {
 		switch (predIndex) {
-		case 27: return precpred(_ctx, 1);
+		case 27:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean structDeclarationList_sempred(StructDeclarationListContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 28:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean structDeclaratorList_sempred(StructDeclaratorListContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 29:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean enumeratorList_sempred(EnumeratorListContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 30:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean directDeclarator_sempred(DirectDeclaratorContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 31:
+			return precpred(_ctx, 7);
+		case 32:
+			return precpred(_ctx, 6);
+		case 33:
+			return precpred(_ctx, 5);
+		case 34:
+			return precpred(_ctx, 4);
+		case 35:
+			return precpred(_ctx, 3);
+		case 36:
+			return precpred(_ctx, 2);
+		}
+		return true;
+	}
+	private boolean typeQualifierList_sempred(TypeQualifierListContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 37:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean parameterList_sempred(ParameterListContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 38:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean identifierList_sempred(IdentifierListContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 39:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean directAbstractDeclarator_sempred(DirectAbstractDeclaratorContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 40:
+			return precpred(_ctx, 5);
+		case 41:
+			return precpred(_ctx, 4);
+		case 42:
+			return precpred(_ctx, 3);
+		case 43:
+			return precpred(_ctx, 2);
+		case 44:
+			return precpred(_ctx, 1);
 		}
 		return true;
 	}
 	private boolean initializerList_sempred(InitializerListContext _localctx, int predIndex) {
 		switch (predIndex) {
-		case 45: return precpred(_ctx, 1);
+		case 45:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean designatorList_sempred(DesignatorListContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 46:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean blockItemList_sempred(BlockItemListContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 47:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean forExpression_sempred(ForExpressionContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 48:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean translationUnit_sempred(TranslationUnitContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 49:
+			return precpred(_ctx, 1);
+		}
+		return true;
+	}
+	private boolean declarationList_sempred(DeclarationListContext _localctx, int predIndex) {
+		switch (predIndex) {
+		case 50:
+			return precpred(_ctx, 1);
 		}
 		return true;
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3w\u0506\4\2\t\2\4"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3w\u0506\4\2\t\2\4"+
 		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
 		"\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
 		"\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31\t\31"+
@@ -7303,46 +8106,46 @@ public class CParser extends Parser {
 		"\32\34\36 \"$&(*,.\60\62\64\668:<>@BDFHJLNPRTVXZ\\^`bdfhjlnprtvxz|~\u0080"+
 		"\u0082\u0084\u0086\u0088\u008a\u008c\u008e\u0090\u0092\u0094\u0096\u0098"+
 		"\u009a\u009c\u009e\u00a0\u00a2\u00a4\u00a6\u00a8\u00aa\u00ac\u00ae\2\16"+
-		"\7\2IIKKMMPPUV\3\2[e\b\2\21\21\34\34$$**--<<\13\2\13\f\17\17\24\24\31"+
-		"\31\35\35\"#\'(/\60\66\67\4\2\13\f\17\17\4\2++..\6\2\25\25%%\61\61\65"+
-		"\65\6\2\5\5\16\16!!::\4\2=>ZZ\3\2=>\4\2\6\6\n\n\4\2\4\4\61\61\u0578\2"+
-		"\u00d1\3\2\2\2\4\u00d3\3\2\2\2\6\u00da\3\2\2\2\b\u00ec\3\2\2\2\n\u0110"+
-		"\3\2\2\2\f\u012c\3\2\2\2\16\u014d\3\2\2\2\20\u014f\3\2\2\2\22\u015e\3"+
-		"\2\2\2\24\u0160\3\2\2\2\26\u0171\3\2\2\2\30\u017f\3\2\2\2\32\u018d\3\2"+
-		"\2\2\34\u01a1\3\2\2\2\36\u01af\3\2\2\2 \u01ba\3\2\2\2\"\u01c5\3\2\2\2"+
-		"$\u01d0\3\2\2\2&\u01db\3\2\2\2(\u01e6\3\2\2\2*\u01f4\3\2\2\2,\u01f6\3"+
-		"\2\2\2.\u01f8\3\2\2\2\60\u0203\3\2\2\2\62\u020d\3\2\2\2\64\u0210\3\2\2"+
-		"\2\66\u0215\3\2\2\28\u021e\3\2\2\2:\u0220\3\2\2\2<\u0230\3\2\2\2>\u0232"+
-		"\3\2\2\2@\u0242\3\2\2\2B\u024f\3\2\2\2D\u0251\3\2\2\2F\u0253\3\2\2\2H"+
-		"\u0264\3\2\2\2J\u026e\3\2\2\2L\u0270\3\2\2\2N\u0281\3\2\2\2P\u0296\3\2"+
-		"\2\2R\u0298\3\2\2\2T\u02a8\3\2\2\2V\u02aa\3\2\2\2X\u02ac\3\2\2\2Z\u02b1"+
-		"\3\2\2\2\\\u02b9\3\2\2\2^\u02c5\3\2\2\2`\u02c8\3\2\2\2b\u02da\3\2\2\2"+
-		"d\u0315\3\2\2\2f\u0317\3\2\2\2h\u0327\3\2\2\2j\u0332\3\2\2\2l\u033b\3"+
-		"\2\2\2n\u0350\3\2\2\2p\u0352\3\2\2\2r\u0361\3\2\2\2t\u0363\3\2\2\2v\u0375"+
-		"\3\2\2\2x\u0377\3\2\2\2z\u0382\3\2\2\2|\u0391\3\2\2\2~\u03c1\3\2\2\2\u0080"+
-		"\u03f1\3\2\2\2\u0082\u03fd\3\2\2\2\u0084\u03ff\3\2\2\2\u0086\u0410\3\2"+
-		"\2\2\u0088\u0413\3\2\2\2\u008a\u0423\3\2\2\2\u008c\u0425\3\2\2\2\u008e"+
-		"\u0456\3\2\2\2\u0090\u0463\3\2\2\2\u0092\u0465\3\2\2\2\u0094\u046b\3\2"+
-		"\2\2\u0096\u0477\3\2\2\2\u0098\u047a\3\2\2\2\u009a\u048d\3\2\2\2\u009c"+
-		"\u04a3\3\2\2\2\u009e\u04b9\3\2\2\2\u00a0\u04bf\3\2\2\2\u00a2\u04c1\3\2"+
-		"\2\2\u00a4\u04dc\3\2\2\2\u00a6\u04df\3\2\2\2\u00a8\u04e3\3\2\2\2\u00aa"+
-		"\u04f0\3\2\2\2\u00ac\u04f3\3\2\2\2\u00ae\u04fb\3\2\2\2\u00b0\u00d2\7k"+
-		"\2\2\u00b1\u00d2\7l\2\2\u00b2\u00b4\7n\2\2\u00b3\u00b2\3\2\2\2\u00b4\u00b5"+
-		"\3\2\2\2\u00b5\u00b3\3\2\2\2\u00b5\u00b6\3\2\2\2\u00b6\u00d2\3\2\2\2\u00b7"+
-		"\u00b8\7=\2\2\u00b8\u00b9\5.\30\2\u00b9\u00ba\7>\2\2\u00ba\u00d2\3\2\2"+
-		"\2\u00bb\u00d2\5\4\3\2\u00bc\u00be\7\3\2\2\u00bd\u00bc\3\2\2\2\u00bd\u00be"+
-		"\3\2\2\2\u00be\u00bf\3\2\2\2\u00bf\u00c0\7=\2\2\u00c0\u00c1\5\u0092J\2"+
-		"\u00c1\u00c2\7>\2\2\u00c2\u00d2\3\2\2\2\u00c3\u00c4\7\b\2\2\u00c4\u00c5"+
-		"\7=\2\2\u00c5\u00c6\5\16\b\2\u00c6\u00c7\7Z\2\2\u00c7\u00c8\5z>\2\u00c8"+
-		"\u00c9\7>\2\2\u00c9\u00d2\3\2\2\2\u00ca\u00cb\7\20\2\2\u00cb\u00cc\7="+
-		"\2\2\u00cc\u00cd\5z>\2\u00cd\u00ce\7Z\2\2\u00ce\u00cf\5\16\b\2\u00cf\u00d0"+
-		"\7>\2\2\u00d0\u00d2\3\2\2\2\u00d1\u00b0\3\2\2\2\u00d1\u00b1\3\2\2\2\u00d1"+
-		"\u00b3\3\2\2\2\u00d1\u00b7\3\2\2\2\u00d1\u00bb\3\2\2\2\u00d1\u00bd\3\2"+
-		"\2\2\u00d1\u00c3\3\2\2\2\u00d1\u00ca\3\2\2\2\u00d2\3\3\2\2\2\u00d3\u00d4"+
-		"\78\2\2\u00d4\u00d5\7=\2\2\u00d5\u00d6\5*\26\2\u00d6\u00d7\7Z\2\2\u00d7"+
-		"\u00d8\5\6\4\2\u00d8\u00d9\7>\2\2\u00d9\5\3\2\2\2\u00da\u00db\b\4\1\2"+
-		"\u00db\u00dc\5\b\5\2\u00dc\u00e2\3\2\2\2\u00dd\u00de\f\3\2\2\u00de\u00df"+
-		"\7Z\2\2\u00df\u00e1\5\b\5\2\u00e0\u00dd\3\2\2\2\u00e1\u00e4\3\2\2\2\u00e2"+
+		"\7\2IIKKMMPPUV\3\2[e\b\2\21\21\34\34$$**--<<\n\2\6\b\24\24\31\31\35\35"+
+		"\"#\'(/\60\66\67\3\2\6\b\4\2++..\6\2\25\25%%\61\61\65\65\5\2\n\13!!::"+
+		"\4\2=>ZZ\3\2=>\4\2\r\r\17\17\4\2\20\20\61\61\2\u0578\2\u00d1\3\2\2\2\4"+
+		"\u00d3\3\2\2\2\6\u00da\3\2\2\2\b\u00ec\3\2\2\2\n\u0110\3\2\2\2\f\u012c"+
+		"\3\2\2\2\16\u014d\3\2\2\2\20\u014f\3\2\2\2\22\u015e\3\2\2\2\24\u0160\3"+
+		"\2\2\2\26\u0171\3\2\2\2\30\u017f\3\2\2\2\32\u018d\3\2\2\2\34\u01a1\3\2"+
+		"\2\2\36\u01af\3\2\2\2 \u01ba\3\2\2\2\"\u01c5\3\2\2\2$\u01d0\3\2\2\2&\u01db"+
+		"\3\2\2\2(\u01e6\3\2\2\2*\u01f4\3\2\2\2,\u01f6\3\2\2\2.\u01f8\3\2\2\2\60"+
+		"\u0203\3\2\2\2\62\u020d\3\2\2\2\64\u0210\3\2\2\2\66\u0215\3\2\2\28\u021e"+
+		"\3\2\2\2:\u0220\3\2\2\2<\u0230\3\2\2\2>\u0232\3\2\2\2@\u0242\3\2\2\2B"+
+		"\u024f\3\2\2\2D\u0251\3\2\2\2F\u0253\3\2\2\2H\u0264\3\2\2\2J\u026e\3\2"+
+		"\2\2L\u0270\3\2\2\2N\u0281\3\2\2\2P\u0296\3\2\2\2R\u0298\3\2\2\2T\u02a8"+
+		"\3\2\2\2V\u02aa\3\2\2\2X\u02ac\3\2\2\2Z\u02b1\3\2\2\2\\\u02b9\3\2\2\2"+
+		"^\u02c5\3\2\2\2`\u02c8\3\2\2\2b\u02da\3\2\2\2d\u0315\3\2\2\2f\u0317\3"+
+		"\2\2\2h\u0327\3\2\2\2j\u0332\3\2\2\2l\u033b\3\2\2\2n\u0350\3\2\2\2p\u0352"+
+		"\3\2\2\2r\u0361\3\2\2\2t\u0363\3\2\2\2v\u0375\3\2\2\2x\u0377\3\2\2\2z"+
+		"\u0382\3\2\2\2|\u0391\3\2\2\2~\u03c1\3\2\2\2\u0080\u03f1\3\2\2\2\u0082"+
+		"\u03fd\3\2\2\2\u0084\u03ff\3\2\2\2\u0086\u0410\3\2\2\2\u0088\u0413\3\2"+
+		"\2\2\u008a\u0423\3\2\2\2\u008c\u0425\3\2\2\2\u008e\u0456\3\2\2\2\u0090"+
+		"\u0463\3\2\2\2\u0092\u0465\3\2\2\2\u0094\u046b\3\2\2\2\u0096\u0477\3\2"+
+		"\2\2\u0098\u047a\3\2\2\2\u009a\u048d\3\2\2\2\u009c\u04a3\3\2\2\2\u009e"+
+		"\u04b9\3\2\2\2\u00a0\u04bf\3\2\2\2\u00a2\u04c1\3\2\2\2\u00a4\u04dc\3\2"+
+		"\2\2\u00a6\u04df\3\2\2\2\u00a8\u04e3\3\2\2\2\u00aa\u04f0\3\2\2\2\u00ac"+
+		"\u04f3\3\2\2\2\u00ae\u04fb\3\2\2\2\u00b0\u00d2\7k\2\2\u00b1\u00d2\7l\2"+
+		"\2\u00b2\u00b4\7n\2\2\u00b3\u00b2\3\2\2\2\u00b4\u00b5\3\2\2\2\u00b5\u00b3"+
+		"\3\2\2\2\u00b5\u00b6\3\2\2\2\u00b6\u00d2\3\2\2\2\u00b7\u00b8\7=\2\2\u00b8"+
+		"\u00b9\5.\30\2\u00b9\u00ba\7>\2\2\u00ba\u00d2\3\2\2\2\u00bb\u00d2\5\4"+
+		"\3\2\u00bc\u00be\7\3\2\2\u00bd\u00bc\3\2\2\2\u00bd\u00be\3\2\2\2\u00be"+
+		"\u00bf\3\2\2\2\u00bf\u00c0\7=\2\2\u00c0\u00c1\5\u0092J\2\u00c1\u00c2\7"+
+		">\2\2\u00c2\u00d2\3\2\2\2\u00c3\u00c4\7\4\2\2\u00c4\u00c5\7=\2\2\u00c5"+
+		"\u00c6\5\16\b\2\u00c6\u00c7\7Z\2\2\u00c7\u00c8\5z>\2\u00c8\u00c9\7>\2"+
+		"\2\u00c9\u00d2\3\2\2\2\u00ca\u00cb\7\5\2\2\u00cb\u00cc\7=\2\2\u00cc\u00cd"+
+		"\5z>\2\u00cd\u00ce\7Z\2\2\u00ce\u00cf\5\16\b\2\u00cf\u00d0\7>\2\2\u00d0"+
+		"\u00d2\3\2\2\2\u00d1\u00b0\3\2\2\2\u00d1\u00b1\3\2\2\2\u00d1\u00b3\3\2"+
+		"\2\2\u00d1\u00b7\3\2\2\2\u00d1\u00bb\3\2\2\2\u00d1\u00bd\3\2\2\2\u00d1"+
+		"\u00c3\3\2\2\2\u00d1\u00ca\3\2\2\2\u00d2\3\3\2\2\2\u00d3\u00d4\78\2\2"+
+		"\u00d4\u00d5\7=\2\2\u00d5\u00d6\5*\26\2\u00d6\u00d7\7Z\2\2\u00d7\u00d8"+
+		"\5\6\4\2\u00d8\u00d9\7>\2\2\u00d9\5\3\2\2\2\u00da\u00db\b\4\1\2\u00db"+
+		"\u00dc\5\b\5\2\u00dc\u00e2\3\2\2\2\u00dd\u00de\f\3\2\2\u00de\u00df\7Z"+
+		"\2\2\u00df\u00e1\5\b\5\2\u00e0\u00dd\3\2\2\2\u00e1\u00e4\3\2\2\2\u00e2"+
 		"\u00e0\3\2\2\2\u00e2\u00e3\3\2\2\2\u00e3\7\3\2\2\2\u00e4\u00e2\3\2\2\2"+
 		"\u00e5\u00e6\5z>\2\u00e6\u00e7\7X\2\2\u00e7\u00e8\5*\26\2\u00e8\u00ed"+
 		"\3\2\2\2\u00e9\u00ea\7\27\2\2\u00ea\u00eb\7X\2\2\u00eb\u00ed\5*\26\2\u00ec"+
@@ -7493,7 +8296,7 @@ public class CParser extends Parser {
 		"\u02a4\3\2\2\2\u02a9U\3\2\2\2\u02aa\u02ab\7k\2\2\u02abW\3\2\2\2\u02ac"+
 		"\u02ad\7\65\2\2\u02ad\u02ae\7=\2\2\u02ae\u02af\5z>\2\u02af\u02b0\7>\2"+
 		"\2\u02b0Y\3\2\2\2\u02b1\u02b2\t\b\2\2\u02b2[\3\2\2\2\u02b3\u02ba\t\t\2"+
-		"\2\u02b4\u02ba\5f\64\2\u02b5\u02b6\7\7\2\2\u02b6\u02b7\7=\2\2\u02b7\u02b8"+
+		"\2\u02b4\u02ba\5f\64\2\u02b5\u02b6\7\f\2\2\u02b6\u02b7\7=\2\2\u02b7\u02b8"+
 		"\7k\2\2\u02b8\u02ba\7>\2\2\u02b9\u02b3\3\2\2\2\u02b9\u02b4\3\2\2\2\u02b9"+
 		"\u02b5\3\2\2\2\u02ba]\3\2\2\2\u02bb\u02bc\7\63\2\2\u02bc\u02bd\7=\2\2"+
 		"\u02bd\u02be\5z>\2\u02be\u02bf\7>\2\2\u02bf\u02c6\3\2\2\2\u02c0\u02c1"+
@@ -7522,10 +8325,10 @@ public class CParser extends Parser {
 		"\7>\2\2\u0307\u02dc\3\2\2\2\u0307\u02e5\3\2\2\2\u0307\u02ee\3\2\2\2\u0307"+
 		"\u02f5\3\2\2\2\u0307\u02fc\3\2\2\2\u0307\u0301\3\2\2\2\u0308\u030b\3\2"+
 		"\2\2\u0309\u0307\3\2\2\2\u0309\u030a\3\2\2\2\u030ac\3\2\2\2\u030b\u0309"+
-		"\3\2\2\2\u030c\u030d\7\n\2\2\u030d\u030f\7=\2\2\u030e\u0310\7n\2\2\u030f"+
+		"\3\2\2\2\u030c\u030d\7\r\2\2\u030d\u030f\7=\2\2\u030e\u0310\7n\2\2\u030f"+
 		"\u030e\3\2\2\2\u0310\u0311\3\2\2\2\u0311\u030f\3\2\2\2\u0311\u0312\3\2"+
 		"\2\2\u0312\u0313\3\2\2\2\u0313\u0316\7>\2\2\u0314\u0316\5f\64\2\u0315"+
-		"\u030c\3\2\2\2\u0315\u0314\3\2\2\2\u0316e\3\2\2\2\u0317\u0318\7\r\2\2"+
+		"\u030c\3\2\2\2\u0315\u0314\3\2\2\2\u0316e\3\2\2\2\u0317\u0318\7\16\2\2"+
 		"\u0318\u0319\7=\2\2\u0319\u031a\7=\2\2\u031a\u031b\5h\65\2\u031b\u031c"+
 		"\7>\2\2\u031c\u031d\7>\2\2\u031dg\3\2\2\2\u031e\u0323\5j\66\2\u031f\u0320"+
 		"\7Z\2\2\u0320\u0322\5j\66\2\u0321\u031f\3\2\2\2\u0322\u0325\3\2\2\2\u0323"+
