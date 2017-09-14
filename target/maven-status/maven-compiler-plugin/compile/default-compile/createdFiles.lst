@@ -1,0 +1,6 @@
+com\rahul\searcher\rest\SearchResource.class
+com\rahul\searcher\SearcherApplication.class
+com\rahul\searcher\service\dto\SearchDTO.class
+com\rahul\searcher\service\dto\SearchResultDTO.class
+com\rahul\searcher\service\SearchService.class
+com\rahul\searcher\config\PropertyFileReader.class
